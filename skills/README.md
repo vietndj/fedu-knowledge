@@ -13,7 +13,8 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 | [kho-logic](kho-logic/SKILL.md) | A | 10 | 1 |
 | [html](html/SKILL.md) | A | 9 | 0 |
 | [phan-tich-podcast-youtube](phan-tich-podcast-youtube/SKILL.md) | A | 6 | 0 |
-| [analyze-video](analyze-video/SKILL.md) | B | 10 | 4 |
+| [bai-tap-quay-9-canh](bai-tap-quay-9-canh/SKILL.md) | A | 3 | 0 |
+| [analyze-video](analyze-video/SKILL.md) | B | 4 | 4 |
 | [kham-kenh](kham-kenh/SKILL.md) | B | 15 | 2 |
 | [banner-k4](banner-k4/SKILL.md) | B | 14 | 0 |
 | [tao-slide-pro](tao-slide-pro/SKILL.md) | B | 10 | 1 |

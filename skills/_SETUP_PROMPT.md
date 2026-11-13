@@ -11,6 +11,7 @@ Em đọc thư mục `skills/` trong repo vietndj/fedu-knowledge vừa nhập. H
 | `kho-logic` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/kho-logic/SKILL.md |
 | `html` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/html/SKILL.md |
 | `phan-tich-podcast-youtube` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/phan-tich-podcast-youtube/SKILL.md |
+| `bai-tap-quay-9-canh` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/bai-tap-quay-9-canh/SKILL.md |
 | `analyze-video` | B | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/analyze-video/SKILL.md |
 | `kham-kenh` | B | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/kham-kenh/SKILL.md |
 | `banner-k4` | B | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/banner-k4/SKILL.md |
