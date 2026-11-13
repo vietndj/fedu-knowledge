@@ -44,3 +44,10 @@ Luật ghi:
 
 ## 4. Nếu không truy cập được Google Docs
 Xuất nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` trong chat để anh bấm Sao chép; ở Mac gõ `VỀ MÁY` (máy tự đọc clipboard).
+
+## 5. Phân tích video — `PHÂN TÍCH VIDEO <mã>`
+Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KHÔNG cắt ảnh).
+1. Mở Google Docs `AGY_VIDEO_<mã>` trong `AGY_BRIDGE/video_jobs`.
+2. Xem video qua link YouTube trong Docs; không xem được thì nhờ anh bấm `+` → Drive → `AGY_BRIDGE/video_jobs/<mã>.mp4`.
+3. Soi từng shot theo đúng mốc giờ đã cho, áp kỹ năng `analyze-video` + luật few-shot trong Docs. In báo cáo ra chat.
+4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.
