@@ -48,6 +48,6 @@ Xuất nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` trong chat để 
 ## 5. Phân tích video — `PHÂN TÍCH VIDEO <mã>`
 Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KHÔNG cắt ảnh).
 1. Mở Google Docs `AGY_VIDEO_<mã>` trong `AGY_BRIDGE/video_jobs`.
-2. Xem video qua link YouTube trong Docs; không xem được thì nhờ anh bấm `+` → Drive → `AGY_BRIDGE/video_jobs/<mã>.mp4`.
+2. Xem **video mp4 đính kèm trong chat** (Mac tự đính kèm). Link YouTube unlisted, link ảnh .webp, @Drive mp4 đều KHÔNG cho em thấy hình → nếu chưa có mp4 đính kèm thì nhờ anh bấm `+` → Thêm từ Drive → `AGY_BRIDGE/video_jobs/<mã>.mp4`. Không thấy hình thì KHÔNG CHỐT PHIÊN.
 3. Soi từng shot theo đúng mốc giờ đã cho, áp kỹ năng `analyze-video` + luật few-shot trong Docs. In báo cáo ra chat.
-4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.
+4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng, sync có `"nguon_hinh": "video"`). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.

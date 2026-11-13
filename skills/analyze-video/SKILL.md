@@ -10,7 +10,7 @@ tier: B
 > - Trên Web chỉ lên phương án + spec JSON/code đầy đủ trong khối `agy-patch`; việc render/dựng/ship để Antigravity chạy trên Mac.
 > - Kết thúc phiên: làm theo kỹ năng `agy-cau-noi` (ghi kết quả vào Google Docs `AGY_INBOX`).
 >
-> **LUỒNG WEB ⇄ MAC (ưu tiên):** Mac đã tải video, cắt shot, đẩy ảnh lên R2 và đưa YouTube. Khi anh gõ `PHÂN TÍCH VIDEO <mã>`: mở Docs `AGY_VIDEO_<mã>` trong Drive `AGY_BRIDGE/video_jobs` → xem video (link YouTube, hoặc anh đính kèm `<mã>.mp4` từ Drive) → soi từng shot theo mốc giờ → in báo cáo 4 phần ra chat → `CHỐT PHIÊN` đúng 2 FILE `video/<folder>/shots.json` + `video/<folder>/sync.json` như yêu cầu trong Docs. KHÔNG tự cắt ảnh, KHÔNG đổi số shot.
+> **LUỒNG WEB ⇄ MAC (ưu tiên):** Mac đã tải video, cắt shot, đẩy ảnh lên R2 và đưa YouTube. Khi anh gõ `PHÂN TÍCH VIDEO <mã>`: mở Docs `AGY_VIDEO_<mã>` trong Drive `AGY_BRIDGE/video_jobs` → xem video (link YouTube, hoặc anh đính kèm `<mã>.mp4` từ Drive) → soi từng shot theo mốc giờ → in báo cáo 4 phần ra chat → `CHỐT PHIÊN` đúng 2 FILE `video/<folder>/shots.json` + `video/<folder>/sync.json` như yêu cầu trong Docs. KHÔNG tự cắt ảnh, KHÔNG đổi số shot. Link ảnh .webp và @Drive mp4 em KHÔNG nhìn được → bắt buộc có mp4 đính kèm trong chat; không thấy hình thì KHÔNG CHỐT PHIÊN. sync.json phải có `"nguon_hinh": "video"`.
 
 > Tài liệu kèm: `references/broll-and-storyboard-pipeline.md`, `references/carousel-yt-upgrade.md`, `references/examples_and_catalog.md`, `references/youtube-token-troubleshoot.md`
 
