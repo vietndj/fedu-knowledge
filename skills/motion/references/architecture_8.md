@@ -1,0 +1,30 @@
+# Tám Chuẩn Kiến Trúc Bắt Buộc Của Motion Engine V7.1
+
+1. **Ma Trận Biến Dạng 4 Cấp (`KineticDeformClass30` trong `smoothPhysics30fps.ts`):**
+   - **Cấp 1 (`KINETIC_READABLE_30` — Chữ câu dài $\ge 3$ từ, chữ thông tin, Typewriter, số liệu):** **`0%` méo trục (`scaleX === scaleY`, `uniform: true`), `0°` skew**, khóa đọc tĩnh $\ge 60\%$ thời lượng.
+   - **Cấp 2 (`KINETIC_HERO_30` — Đại tự 1–2 từ $\ge 80\text{px}$):** Biến dạng vi mô $\le 2.5\%$, `skewX <= 1.8°` chỉ trong `3–4 frames` đỉnh vận tốc, khóa phẳng `100%` khi đọc.
+   - **Cấp 3 (`KINETIC_RIGID_30` — Khung chứa B-Roll, Ảnh mặt người, Thẻ UI nhiều chữ, MacBook 3D):** **`0%` méo trục (`rigidContent: true`, `uniform: true`)**.
+   - **Cấp 4 (`ELASTIC` — Nút bấm độc lập, Con trỏ chuột, Quả cầu, Vỏ rỗng lúc đang morph, Sóng/Hạt sáng):** Cho phép nén–giãn đàn hồi `6%–14%` (`sx * sy = 1.0`).
+2. **Chuẩn Giai Đoạn OUT 9 Frames Đầu Cuối (`exitCurve30` + `evaluateExit30` + `<SceneExitWrapper30 />`):**
+   - Mọi chuyển động và tiểu cảnh bắt buộc có `exitFrames = 9`: `3 frames` đầu lấy đà ngược chiều (`-12%`) + `6 frames` sau gia tốc bậc ba vút thoát đạt `100%` biên độ tại `exitFrame - 1`.
+3. **Chuẩn Hàng Chữ Tiếp Sức Chống Đè 100% (`<FlexRelayRow30 />` + `evaluateRelayShift30`):**
+   - **CẤM** dùng `position: 'absolute'` cho $\ge 2$ cụm chữ cùng hàng ngang và **CẤM** dùng `marginLeft <= -15px` (Gate B8).
+4. **Chuẩn Giàn Camera 3D Phối Cảnh Thật (`<Camera3DRig30 />` + `<Plane3D />` + `<Extrude3DPill />`):**
+   - **CẤM** xoay phẳng 2D giả làm 3D (Gate B10). Tuyệt đối không đặt `overflow: 'hidden'`, `filter`, hay `opacity < 1` trực tiếp trên node `preserve-3d`.
+5. **Giao Thức Bàn Tay Con Trỏ 4 Pha Neo Đích Toán Học (`evaluateCursorTimeline30` + `anchorToRect30` + `<HandCursor30 />` ở Root Stage — Gate B19):**
+   - **BẮT BUỘC đặt `<HandCursor30 />` ở cấp ngoài cùng trực tiếp dưới `<AbsoluteFill>`** (`1920x1080` hoặc `1080x1920`). Tuyệt đối CẤM đặt lồng trong thẻ `<div>` con có `position: relative` làm lệch tọa độ bấm!
+   - Mọi tọa độ đích `to` khi bấm nút Submit / CTA phải tính qua `anchorToRect30(rect, anchor, inset)` để mũi tên chạm đúng tâm nút (`\Delta \le 18\text{px}`), và không bao giờ dừng đè lên mặt nhân vật trong B-Roll.
+6. **Chuẩn Khung B-Roll Vuông & Dải Ghép Khung Vuông Đa Cảnh Chống Cắt Mặt (`<BrollVideo30 cardAspect />` + `<MultiSquareBrollStrip30 />` + `broll_crop_manifest.json` — Gate B20 V7.1):**
+   - **Nguyên lý Hình học Cốt lõi:** Kho B-Roll thực tế gồm hỗn hợp video dọc `9:16` (`0.5625`) và video ngang `16:9` (`1.7778`). Nếu nhét 1 video dọc `9:16` vào hộp ngang dẹt (`cardAspect = 1.77..2.96`), chiều cao hiển thị chỉ còn `19%–31%`, dẫn đến cắt đứt trán/mắt hoặc lộ trần nhà/biển `EXIT` xanh lá. Ngược lại, **Khung Vuông `~1:1` (`cardAspect ∈ [0.80, 1.35]`) là Điểm Ngọt Hình Học (`Geometric Sweet Spot`)** cho cả nguồn `9:16` lẫn `16:9`!
+   - **Quy tắc 1 (Truyền `cardAspect <= 1.45`):** Mọi thẻ `<BrollVideo30 src={...} sceneFrom={...} cardAspect={w/h} />` bắt buộc truyền `cardAspect` rõ ràng và **không bao giờ vượt quá `1.45`**.
+   - **Quy tắc 2 (Dùng `<MultiSquareBrollStrip30 />` cho mọi vùng ngang rộng `w/h > 1.45`):** Khi thiết kế có vùng ngang rộng (như dải preview `604x224` ở `S04` Nhánh 1, khung Hero `920x500` ở `S04` Nhánh 2, dải Panorama `1220x430` ở `S07` Nhánh 2, hoặc khung Cinema `1380x660` ở `S09`), **BẮT BUỘC dùng `<MultiSquareBrollStrip30 />`** để ghép **2 hoặc 3 khung vuông `~1:1` đặt cạnh nhau (`2x1 Diptych` / `3x1 Triptych`)**, mỗi ô vuông phát 1 cảnh B-Roll độc bản (`M01..M29`).
+   - **Quy tắc 3 (Tự động cắt trần nhà/biển EXIT, kéo mặt ở nửa dưới lên tầm mắt & `0%` Zoom Cận Mặt Học Viên — Luật `R_B20d`):**
+     + **CẤM TUYỆT ĐỐI zoom cận mặt học viên (`safeScale = 1.0`, `0%` zoom cho mọi video học viên dọc `STU_off3_*`, `B18`, `B19`):** Giữ khung nhỏ gọn đủ tỷ lệ (`9:16` `0.5625` hoặc `0.65` trên bản dọc, vuông `1:1` trên bản ngang) để thấy trọn vẹn đầu, vai, trang phục và bối cảnh của học viên; chọn `safeStartFrom` tại đúng frame học viên mở mắt tươi tắn, biểu cảm đẹp; con trỏ chuột bắt buộc bấm vào dải nhãn/pill dưới chân card (`footer`), không bao giờ đè lên khuôn mặt học viên!
+     + Với clip dọc lớp học có trần nhà/biển `EXIT` (`K2_01`, `K2_02`, `K2_03`): `broll_crop_manifest.json` ghi nhận `ceilingY = 0.31..0.34`, tự động đẩy `objectPosition Y` xuống `70.9%..77.7%` để cắt sạch biển `EXIT` và giữ trọn khuôn mặt.
+     + Với clip ngang toàn cảnh lớp học có tường/trần trống phía trên và mặt ở thấp (`B25` `eyeY=0.58`, `B01` `eyeY=0.68`): `resolveBrollFraming30` tự động bật `safeScale = 1.22..1.36` với `transformOrigin: '<X>% 88%'` (neo đáy) để đẩy mảng tường trống phía trên ra khỏi khung và nâng khuôn mặt lên đường vàng `1/3`!
+     + Tự động bỏ qua các cú cắt cảnh ở đầu clip bằng `safeStartFrom` (`B08: 26f`, `B18: 0f`, `B19: 20f`, `STU_off3_07: 18f`).
+7. **Quy Trình Khởi Tạo Mẫu Quảng Cáo (`Pre-Flight Audio-Pillar`) & Công Thức Dừng Nhạc `1.60s` Ở Tiêu Đề Chính (`R_B12c` — Gate B12..B18):**
+   - Luôn cấu trúc video quanh **3 Nội Dung Chính (`01 · KỊCH BẢN 7 CÂU`, `02 · KÈM 1-1 TẠI BÀN`, `03 · MANG VỀ 3 VIDEO`)**, câu chữ tinh gọn 3–4 từ/dòng ($\le 10$ tiếng).
+   - **Ưu tiên tuyệt đối Màn Hình Điểm Chính Dừng Nhạc `1.60s` (`48 frames` kèm Sub-Bass Hit + Riser, mở `<ZeroNoisePillarScreen30 />` toàn màn hình chiếm 100% sự chú ý cho cả bản `16:9` lẫn `9:16`)** thay vì xếp chữ tiêu đề lớn cạnh một video đang chuyển động gây phân tán mắt người xem (`R_B12c_DEDICATED_PAUSE_SCREEN_OVER_INLINE_TITLE`). Khép lại video bằng **`<PillarSummaryBoard30 />` + Audio Hard-Stop CTA**.
+8. **Ma Trận Phân Tầng Cơ Học Nhún Có Nguyên Nhân (`L0 / L1 / L2 / L3` — Gate B17):**
+   - `L0` (Crisp Static Lock `0%` nhún cho Container lớn, lưới nhiều video, màn hình dừng nhạc, màn hình kết), `L1` (Trượt không gian `overshoot <= 2%`), `L2` (Nút/Pill nhỏ `pressPx: 3, NAY_NHE`), `L3` (Nút Hero CTA `pressPx: 7, NAY_MANH` tối đa 3 lần).
