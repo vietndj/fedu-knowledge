@@ -3,6 +3,7 @@ Em đọc thư mục `skills/` trong repo vietndj/fedu-knowledge vừa nhập. H
 | Tên kỹ năng | Tầng | Bản đầy đủ (raw) |
 |---|---|---|
 | `agy-cau-noi` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/agy-cau-noi/SKILL.md |
+| `luu-kho` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/luu-kho/SKILL.md |
 | `3-tang` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/3-tang/SKILL.md |
 | `nguyen-viet-voice` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/nguyen-viet-voice/SKILL.md |
 | `audit-viet-lai` | A | https://raw.githubusercontent.com/vietndj/fedu-knowledge/main/skills/audit-viet-lai/SKILL.md |

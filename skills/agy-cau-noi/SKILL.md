@@ -51,3 +51,6 @@ Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KH
 2. Xem **video mp4 đính kèm trong chat** (Mac tự đính kèm). Link YouTube unlisted, link ảnh .webp, @Drive mp4 đều KHÔNG cho em thấy hình → nếu chưa có mp4 đính kèm thì nhờ anh bấm `+` → Thêm từ Drive → `AGY_BRIDGE/video_jobs/<mã>.mp4`. Không thấy hình thì KHÔNG CHỐT PHIÊN.
 3. Soi từng shot theo đúng mốc giờ đã cho, áp kỹ năng `analyze-video` + luật few-shot trong Docs. In báo cáo ra chat.
 4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng, sync có `"nguon_hinh": "video"`). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.
+
+## 6. Lưu kho — `LƯU KHO` / `lưu kho` / `CẤT KHO`
+Áp kỹ năng `luu-kho`: chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ tóm tắt + Cẩm nang 5 chương + 10–15 thẻ Hỏi-Đáp), CHỐT PHIÊN với 3 FILE `kho/logicXX.meta.json`, `kho/logicXX_kienthuc.md`, `kho/logicXX_hoidap.md`. Mac gõ `cau ve` là tự dựng HTML và đẩy lên kho.

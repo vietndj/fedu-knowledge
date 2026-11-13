@@ -5,6 +5,7 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 | Kỹ năng | Tầng | KB | Tài liệu kèm |
 |---|---|---|---|
 | [agy-cau-noi](agy-cau-noi/SKILL.md) | A | 4 | 0 |
+| [luu-kho](luu-kho/SKILL.md) | A | 5 | 0 |
 | [3-tang](3-tang/SKILL.md) | A | 10 | 1 |
 | [nguyen-viet-voice](nguyen-viet-voice/SKILL.md) | A | 15 | 1 |
 | [audit-viet-lai](audit-viet-lai/SKILL.md) | A | 6 | 2 |
@@ -14,7 +15,7 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 | [html](html/SKILL.md) | A | 9 | 0 |
 | [phan-tich-podcast-youtube](phan-tich-podcast-youtube/SKILL.md) | A | 6 | 0 |
 | [bai-tap-quay-9-canh](bai-tap-quay-9-canh/SKILL.md) | A | 3 | 0 |
-| [analyze-video](analyze-video/SKILL.md) | B | 4 | 4 |
+| [analyze-video](analyze-video/SKILL.md) | B | 10 | 4 |
 | [kham-kenh](kham-kenh/SKILL.md) | B | 15 | 2 |
 | [banner-k4](banner-k4/SKILL.md) | B | 14 | 0 |
 | [tao-slide-pro](tao-slide-pro/SKILL.md) | B | 10 | 1 |
