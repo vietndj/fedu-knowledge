@@ -1,6 +1,6 @@
 ---
 name: agy-cau-noi
-description: "Cầu nối Antigravity ⇄ Gemini Web của anh Việt. Dùng khi anh nói: TIẾP VIỆC MÁY / LÀM TIẾP / NHẬN VIỆC / CHỐT PHIÊN / GHI VỀ MÁY / KẾT PHIÊN. Đọc việc đang dở từ Google Docs AGY_HANDOFF, cuối phiên ghi kết quả vào Google Docs AGY_INBOX để Antigravity trên Mac làm tiếp."
+description: "Cầu nối Antigravity ⇄ Gemini Web của anh Việt. Dùng khi anh nói: TIẾP VIỆC MÁY / LÀM TIẾP / NHẬN VIỆC / CHỐT PHIÊN / GHI VỀ MÁY / KẾT PHIÊN / LƯU KHO, hoặc khi anh hỏi dữ liệu trong kho, học viên STU, hệ thống web fedu.vn, bối cảnh của anh."
 tier: A
 ---
 
@@ -53,4 +53,12 @@ Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KH
 4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng, sync có `"nguon_hinh": "video"`). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.
 
 ## 6. Lưu kho — `LƯU KHO` / `lưu kho` / `CẤT KHO`
-Áp kỹ năng `luu-kho`: chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ tóm tắt + Cẩm nang 5 chương + 10–15 thẻ Hỏi-Đáp), CHỐT PHIÊN với 3 FILE `kho/logicXX.meta.json`, `kho/logicXX_kienthuc.md`, `kho/logicXX_hoidap.md`. Mac gõ `cau ve` là tự dựng HTML và đẩy lên kho.
+Áp kỹ năng `luu-kho` (V3 — 4 phần tự đóng chống cụt file): chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ lục bát + Cẩm nang 5 chương + đúng 10 thẻ Hỏi-Đáp sắc nhất), ghi nối tiếp **4 khối tự đóng riêng biệt** `[1/4]..[4/4] key=K<MMDDHHMM>` vào cuối `AGY_INBOX` (`logicXX.meta.json` + `logicXX_kienthuc_p1.md` → `logicXX_kienthuc_p2.md` → `logicXX_hoidap_p1.md` → `logicXX_hoidap_p2.md`), mỗi khối đều kết thúc bằng `=== HẾT PHIÊN ===`. Chu trình sao lưu tối trên Mac (hoặc lệnh `VỀ MÁY` từ Remote Agent) sẽ tự ghép 4 mảnh, kiểm định và xuất bản lên `kho.fedu.vn` với 0 tốn token.
+
+## 7. Tra cứu dữ liệu toàn hệ thống — Kho, Học viên STU, Web `fedu.vn`, Bối cảnh
+Mỗi tối máy Mac tự động cập nhật dữ liệu mới vào thư mục Google Drive **`AGY_BRIDGE/kho`**. Khi anh Việt hỏi bất kỳ dữ liệu nào trong hệ thống, **tự mở đọc ngay file `00_TONG_DAI_FEDU`** (≤22KB) trong `AGY_BRIDGE/kho` bằng công cụ Google Drive mà không bắt anh đính kèm file:
+- **Bối cảnh, khóa học, 4 định dạng video & `thcn`:** mở `BOICANH_MASTER_FEDU`.
+- **Học viên, lớp K3/K4, tư vấn & khám kênh (`stu.fedu.vn`):** mở `STU_MUC_LUC` tìm dòng học viên để lấy số cuốn → mở đúng `STU_HO_SO_1..N`.
+- **Kho Logic (`logic01..logicXX`), Giải mã cơ chế & Podcast:** mở `MUC_LUC_LOGIC_PODCAST` → mở `KHO_kien-thuc_*`, `KHO_hoi-dap_logicXX_1` hoặc `PODCAST_N`.
+- **Bản đồ 15+ chuyên trang `fedu.vn` & tự động hóa:** mở `HE_THONG_WEB_FEDU`.
+- **Video YouTube 90 ngày & lịch sử làm việc gần đây trên Mac:** mở `VIDEO30_MUC_LUC` hoặc `KHOAI_<YYYY-MM>` mới nhất.
