@@ -8,7 +8,7 @@ tier: A
 > - Bỏ qua mọi lệnh shell/python, đường dẫn `[đường-dẫn-Mac]`, cổng CDP, Verifier script: những thứ đó chỉ chạy trên Mac.
 > - Giữ nguyên toàn bộ tư duy, khuôn, luật văn phong, cổng kiểm định bằng mắt.
 > - Làm trọn đầu ra ngay trên Web (kịch bản, bài viết, phân tích, HTML 1 file).
-> - Kết thúc phiên: làm theo kỹ năng `agy-cau-noi` (ghi kết quả vào Google Docs `AGY_INBOX`).
+> - Kết thúc phiên: in trực tiếp khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ở cuối câu trả lời ngay trong khung chat để máy Mac tự thu hoạch (không gọi Google Docs).
 
 
 # KỸ NĂNG PHÂN TÍCH PODCAST YOUTUBE HỆ THỐNG (SYSTEM ARCHITECT PODCAST ANALYZER)

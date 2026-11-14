@@ -8,7 +8,7 @@ tier: B
 > - Bỏ qua mọi lệnh shell/python, đường dẫn `[đường-dẫn-Mac]`, cổng CDP, Verifier script: những thứ đó chỉ chạy trên Mac.
 > - Giữ nguyên toàn bộ tư duy, khuôn, luật văn phong, cổng kiểm định bằng mắt.
 > - Trên Web chỉ lên phương án + spec JSON/code đầy đủ trong khối `agy-patch`; việc render/dựng/ship để Antigravity chạy trên Mac.
-> - Kết thúc phiên: làm theo kỹ năng `agy-cau-noi` (ghi kết quả vào Google Docs `AGY_INBOX`).
+> - Kết thúc phiên: in trực tiếp khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ở cuối câu trả lời ngay trong khung chat để máy Mac tự thu hoạch (không gọi Google Docs).
 >
 > **LUỒNG WEB ⇄ MAC (ưu tiên):** Mac đã tải video, cắt shot, đẩy ảnh lên R2 và đưa YouTube. Khi anh gõ `PHÂN TÍCH VIDEO <mã>`: mở Docs `AGY_VIDEO_<mã>` trong Drive `AGY_BRIDGE/video_jobs` → xem video (link YouTube, hoặc anh đính kèm `<mã>.mp4` từ Drive) → soi từng shot theo mốc giờ → in báo cáo 4 phần ra chat → `CHỐT PHIÊN` đúng 2 FILE `video/<folder>/shots.json` + `video/<folder>/sync.json` như yêu cầu trong Docs. KHÔNG tự cắt ảnh, KHÔNG đổi số shot. Link ảnh .webp và @Drive mp4 em KHÔNG nhìn được → bắt buộc có mp4 đính kèm trong chat; không thấy hình thì KHÔNG CHỐT PHIÊN. sync.json phải có `"nguon_hinh": "video"`.
 

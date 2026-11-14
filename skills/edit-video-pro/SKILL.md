@@ -8,7 +8,7 @@ tier: B
 > - Bỏ qua mọi lệnh shell/python, đường dẫn `[đường-dẫn-Mac]`, cổng CDP, Verifier script: những thứ đó chỉ chạy trên Mac.
 > - Giữ nguyên toàn bộ tư duy, khuôn, luật văn phong, cổng kiểm định bằng mắt.
 > - Trên Web chỉ lên phương án + spec JSON/code đầy đủ trong khối `agy-patch`; việc render/dựng/ship để Antigravity chạy trên Mac.
-> - Kết thúc phiên: làm theo kỹ năng `agy-cau-noi` (ghi kết quả vào Google Docs `AGY_INBOX`).
+> - Kết thúc phiên: in trực tiếp khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ở cuối câu trả lời ngay trong khung chat để máy Mac tự thu hoạch (không gọi Google Docs).
 
 > Tài liệu kèm: `references/catalog_bds_style_spec.md`, `references/modes_quickstart.md`, `references/v3_spec_and_upgrade_index.md`
 
