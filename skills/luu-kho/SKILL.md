@@ -30,46 +30,25 @@ Xưng "em", gọi "anh Việt". Khi anh gõ **`lưu kho`** (hoặc `LƯU KHO`, `
 
 **Luật cứng**: cấm bảng Markdown `|---|`. Cấm thuật ngữ hàn lâm và từ sáo (tối ưu hóa, chiến lược, chuyên gia, phễu, nỗi đau, khao khát, khơi gợi, bí quyết, đỉnh cao, tử huyệt, đòn bẩy…). Không ghi chữ FEDU trong tiêu đề hay nội dung, chỉ link `https://fedu.vn/k/...` ở chân trang.
 
-## 3. Ghi về máy theo 4 Khối Nhỏ Tự Đóng (Chống cụt chữ Google Docs 100%)
-Tạo 1 mã ngắn `key=K<MMDDHHMM>` (ví dụ `key=K11141930`). Giữ nguyên chữ **`logicXX`**. Nối lần lượt **4 khối ngắn (~2.000 từ/khối)** vào cuối Docs `AGY_INBOX` — **MỖI KHỐI PHẢI KẾT THÚC BẰNG `=== HẾT PHIÊN ===` RIÊNG** để dù mạng ngắt ở khối nào Mac vẫn giữ an toàn các khối trước:
+## 3. Ghi về máy gọn 1 lần (Chống lỗi Google Docs & Chống cụt 100%)
+Giữ nguyên chữ **`logicXX`**. Viết cô đọng, sắc bén (tổng cả bài ~2.200–2.800 từ: mỗi mạch 3 ý trực diện, mỗi thẻ Hỏi-Đáp ~160–200 từ) và nối **1 khối duy nhất** vào cuối Google Docs `AGY_INBOX` (hoặc `AGY_INBOX_CHUNG` nếu ở tài khoản phụ):
 
-- **Lần nối 1 (`[1/4]` — Meta + Chương 1–2):**
 ```
-=== AGY-PHIEN <YYYY-MM-DD HH:MM> | luu-kho: <Tên chuyên đề> [1/4] key=<mã> ===
+=== AGY-PHIEN <YYYY-MM-DD HH:MM> | luu-kho: <Tên chuyên đề> ===
 ### NOTE: HANDOFF
-- Mục tiêu: Lưu kho chuyên đề "<Tên chuyên đề>" (phần 1/4)
+- Mục tiêu: Lưu kho chuyên đề "<Tên chuyên đề>"
 ### FILE: kho/logicXX.meta.json
 {"title": "<Tên ≤ 65 ký tự>", "subtitle": "<1 câu mô tả>", "tho": ["<câu lục>", "<câu bát>"], "pillar": "tam-ly|dinh-vi|kich-ban|case-study|van-hanh", "tags": "tag1, tag2, tag3", "icon": "🧭", "share_url": ""}
-### FILE: kho/logicXX_kienthuc_p1.md
-<# Chương 1 và # Chương 2 đầy đủ>
+### FILE: kho/logicXX_kienthuc.md
+<# Chương 1 đến # Chương 5 đầy đủ>
+### FILE: kho/logicXX_hoidap.md
+<Hỏi 1 đến Hỏi 10 đầy đủ>
 === HẾT PHIÊN ===
 ```
 
-- **Lần nối 2 (`[2/4]` — Chương 3–5):**
-```
-=== AGY-PHIEN <YYYY-MM-DD HH:MM> | luu-kho: <Tên chuyên đề> [2/4] key=<mã> ===
-### FILE: kho/logicXX_kienthuc_p2.md
-<# Chương 3, # Chương 4 và # Chương 5 đầy đủ>
-=== HẾT PHIÊN ===
-```
+- **Trường hợp bài quá dài (> 4.000 từ):** Tách làm 2 hoặc 4 khối tự đóng `[1/2] key=K<MMDDHHMM>` (`logicXX.meta.json` + `logicXX_kienthuc.md`) và `[2/2] key=K<MMDDHHMM>` (`logicXX_hoidap.md`), mỗi khối kết thúc bằng `=== HẾT PHIÊN ===` riêng.
+- **Cơ chế Bất Tử khi công cụ Google Docs lỗi hoặc chưa cấp quyền:** Nếu gọi Google Docs báo lỗi / không ghi được, **TUYỆT ĐỐI KHÔNG dừng lại báo lỗi**, mà **in nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ngay trong khung chat** để máy Mac tự rút trực tiếp từ trình duyệt về dựng web.
 
-- **Lần nối 3 (`[3/4]` — Thẻ Hỏi-Đáp 1–5):**
-```
-=== AGY-PHIEN <YYYY-MM-DD HH:MM> | luu-kho: <Tên chuyên đề> [3/4] key=<mã> ===
-### FILE: kho/logicXX_hoidap_p1.md
-<Thẻ Hỏi 1 đến Thẻ Hỏi 5 đầy đủ>
-=== HẾT PHIÊN ===
-```
-
-- **Lần nối 4 (`[4/4]` — Thẻ Hỏi-Đáp 6–10):**
-```
-=== AGY-PHIEN <YYYY-MM-DD HH:MM> | luu-kho: <Tên chuyên đề> [4/4] key=<mã> ===
-### FILE: kho/logicXX_hoidap_p2.md
-<Thẻ Hỏi 6 đến Thẻ Hỏi 10 đầy đủ>
-=== HẾT PHIÊN ===
-```
-*(Nếu anh Việt yêu cầu "ghi tiếp phần N key=...", chỉ cần nối riêng khối `[N/4] key=...` còn thiếu).*
-
-## 4. Sau khi ghi đủ 4/4 khối
-- In gọn ra chat (≤ 18 dòng): 2 câu thơ tóm tắt + mục lục 5 chương + 10 câu Hỏi.
-- Báo: `Đã ghi đủ 4/4 phần (key=<mã>) vào AGY_INBOX — tối máy tự thu hoạch, hoặc cần ngay thì gõ VỀ MÁY / cau ve.`
+## 4. Sau khi hoàn tất
+- In gọn ra chat (≤ 15 dòng): 2 câu thơ tóm tắt + mục lục 5 chương + 10 câu Hỏi.
+- Báo: `Đã lưu kho chuyên đề "<Tên>" vào AGY_INBOX — tối máy tự thu hoạch, hoặc cần ngay thì gõ VỀ MÁY / cau ve.`
