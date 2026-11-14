@@ -61,7 +61,7 @@
    - Đầy đủ Phần A (`A1..A3`), Phần B (`MX1..MX5`), Phần C (`C1..C2`).
    - **CẤM TUYỆT ĐỐI** viết đoạn *"Câu anh Việt sẽ nói với học viên..."* hoặc *"Chuỗi tin nhắn Zalo mẫu gửi học viên"* trong cả file `.md` lẫn phản hồi trên khung Chat (anh Việt tự biết cách nói chuyện).
    - **CẤM TUYỆT ĐỐI** dùng các từ trong sổ đen `nguyen-viet-voice`, cấm từ `"FEDU"`, cấm gọi là `"xô"`.
-   - **Trên khung Chat báo cáo anh Việt:** Thay toàn bộ chuỗi tin nhắn mẫu bằng **Khối Kết Luận Bảo Vệ Phương Án ($\le 220$ từ, 4 mũi đinh)** để thuyết phục anh Việt: (1) Luận điểm chốt hạ & lý do bác bỏ hướng khác; (2) Bằng chứng số liệu đối chứng; (3) Tử huyệt cảnh báo nếu chiều theo lầm tưởng của học viên; (4) Đúng 2 biến số thực địa cần kiểm chứng.
+   - **Trên khung Chat báo cáo anh Việt:** Thay toàn bộ chuỗi tin nhắn mẫu bằng **Tóm tắt hướng làm ($\le 220$ từ, 4 ý mộc mạc)**: (1) Giữ hướng nào & vì sao bỏ hướng khác; (2) Số thật trên kênh và bài vừa làm; (3) Chỗ dễ nản hoặc dễ vấp nhất nếu quay về thói quen cũ; (4) 2 việc cần xem tiếp ở mấy bài tới.
 
 2. **File 2 — Bản Thảo Luận Tương Tác Trên Web (`.html`) dành cho anh Việt & Học viên cùng bàn:**
    - Xuất ra `[đường-dẫn-Mac]` và đồng bộ lên `stu.fedu.vn`.

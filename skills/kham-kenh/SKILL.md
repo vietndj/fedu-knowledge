@@ -115,10 +115,10 @@ Kỹ năng vận hành theo **Kiến trúc Hybrid 1-Chạm V2.0**: kết hợp *
 
 ### BƯỚC 6: BÁO CÁO KẾT LUẬN THUYẾT PHỤC ANH VIỆT TRÊN CHAT (CẤM CHUỖI TIN NHẮN MẪU)
 - **TUYỆT ĐỐI CẤM** tự động xuất "Chuỗi tin nhắn tư vấn Zalo/Messenger mẫu" để mớm lời gửi học viên (anh Việt tự trò chuyện với học viên bằng giọng thật của anh; chỉ soạn tin nhắn khi anh Việt yêu cầu rõ *"soạn tin nhắn"*).
-- Phản hồi cuối trên Chat chỉ gồm **Link bấm 1 chạm** + **Khối Kết Luận Bảo Vệ Phương Án ($\le 220$ từ, 4 mũi đinh)** để thuyết phục anh Việt:
-  1. **Luận điểm chốt hạ:** Mũi nhọn duy nhất cần đánh cho ca này là gì và vì sao bác bỏ các hướng khác?
-  2. **Bằng chứng số liệu đối chứng:** Cặp số liệu thực tế nào trên kênh chứng minh cơ chế đó đúng?
-  3. **Tử huyệt cảnh báo:** Học viên đang hiểu lầm ở đâu — nếu chiều theo ý họ mà không nắn lại sẽ gãy kênh thế nào?
+- Phản hồi cuối trên Chat chỉ gồm **Link bấm 1 chạm** + **Tóm tắt hướng làm ($\le 220$ từ, 4 ý mộc mạc)** để thuyết phục anh Việt:
+  1. **Giữ hướng nào & vì sao:** Mũi nhọn duy nhất cần đánh cho ca này là gì và vì sao bác bỏ các hướng khác?
+  2. **Số thật trên kênh:** Cặp số liệu thực tế nào trên kênh chứng minh cơ chế đó đúng?
+  3. **Chỗ dễ nản hoặc dễ vấp nhất:** Học viên đang hiểu lầm ở đâu — nếu chiều theo ý họ mà không nắn lại sẽ gãy kênh thế nào?
   4. **2 Biến số cần kiểm chứng:** Đúng 2 điểm mù thực địa anh Việt cần xác nhận khi gặp học viên.
 
 
@@ -127,4 +127,4 @@ Kỹ năng vận hành theo **Kiến trúc Hybrid 1-Chạm V2.0**: kết hợp *
 
 | Mantra / Tác vụ | Tài liệu chi tiết (chỉ đọc khi gọi đúng nhánh) | Thư mục Scripts gốc (không đổi) |
 |---|---|---|
-| **DAY KHO STU / AUTO KHO DRIVE** — Đẩy bài Khám kênh/Định hướng (.html) lên stu.fedu.vn & kho.fedu.vn + video AI lên Drive | [`references/auto-kho-drive.md`](file://[đường-dẫn-Mac]) | `[đường-dẫn-Mac]` |
+| **DAY KHO STU / AUTO KHO DRIVE** — Đẩy bài Khám kênh/Định hướng (.html) lên stu.fedu.vn & kho.fedu.vn + video AI lên Drive | [`references/auto-kho-drive.md`](file://[đường-dẫn-Mac]) | `[đường-dẫn-Mac] gia/sync_kho_audits.py` |

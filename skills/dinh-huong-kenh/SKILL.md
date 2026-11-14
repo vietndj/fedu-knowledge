@@ -137,7 +137,7 @@ gio_quay_tuan: [Số giờ học viên bấm máy được mỗi tuần, vd: 3 g
 ---
 
 ## 3. HAI ĐỊNH DẠNG ĐẦU RA BẮT BUỘC (`.md` & `.html` — `Cổng G7, G8, G15`)
-1. **Bản Phân Tích Logic (`.md`) cho anh Việt:** Có `<!-- KENH_META ... -->` ở đầu, đủ Phần A (`A1..A3`), Phần B (`MX1..MX5`), Phần C (`C1..C2`). **CẤM TUYỆT ĐỐI** soạn chuỗi tin nhắn Zalo mẫu hay câu mớm lời; **CẤM** từ sổ đen `nguyen-viet-voice` (`G7`), cấm chữ `"FEDU"` và từ `"xô"` (`G15`). Trên khung Chat chỉ xuất **Khối Kết Luận Bảo Vệ Phương Án ($\le 220$ từ, 4 mũi đinh)**.
+1. **Bản Phân Tích Logic (`.md`) cho anh Việt:** Có `<!-- KENH_META ... -->` ở đầu, đủ Phần A (`A1..A3`), Phần B (`MX1..MX5`), Phần C (`C1..C2`). **CẤM TUYỆT ĐỐI** soạn chuỗi tin nhắn Zalo mẫu hay câu mớm lời; **CẤM** từ sổ đen `nguyen-viet-voice` (`G7`), cấm chữ `"FEDU"` và từ `"xô"` (`G15`). Trên khung Chat chỉ xuất **Tóm tắt hướng làm ($\le 220$ từ, 4 ý mộc mạc)**.
 2. **Bản Thảo Luận Web (`.html`):** Xuất `[đường-dẫn-Mac]` (InkDoc sáng `#F8FAFC`), có `<!-- KENH_META ... -->`, đủ `data-mx="1"`..`data-mx="5"`, và đủ 3 class chuẩn qua `Cổng G8`: `.analysis-block` (`🔍`), `.question-block` (`❓` kèm Nếu A/B), `.note-block` (`contenteditable="true"` lưu `localStorage` + nút Copy).
 
 ---

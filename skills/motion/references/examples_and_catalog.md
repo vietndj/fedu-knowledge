@@ -67,14 +67,14 @@ Khắc phục triệt để căn bệnh "tham chi tiết / quá tải thông tin
 | Mã Mẫu | Tên Cơ Chế Chuyển Động | Khi Nào Sử Dụng (Semantic Routing) | Nguồn Tham Chiếu (`motion00.html`) |
 |---|---|---|---|
 | **`pin_00`** | **Radial Orbit 12 Icons & Comet Trail** | Mở ra Kỷ nguyên mới, Hệ sinh thái đa công cụ, Tầm nhìn tổng quan | `#REF-01` (`PinterestViet9x16.tsx`) |
-| **`pin_01`** | **Vertical Slot-Machine Wheel Picker & 3-Sphere Blend** | Phủ định danh xưng cũ (cuộn & gạch bỏ) hoặc Giao thoa 3 yếu tố | `#REF-02` (`pin_01_858709853990669408.mp4`) |
-| **`pin_02`** | **Radial Tick-Mark Dial & Cascading File Tree** | Giải thích thuật toán, Phân nhánh cấu trúc từ gốc đến ngọn | `#REF-03` (`pin_02_333759022407655827.mp4`) |
-| **`pin_03`** | **3D Glass Rolodex Stack & Isometric Grid Tilt** | Đóng gói quy trình, Xếp lớp thẻ kiến thức theo trục sâu Z | `#REF-04` (`pin_03_962785226611831867.mp4`) |
-| **`pin_04`** | **Backlit Aura, Cursor Typing & Hard Invert** | Câu Hook phá vỡ niềm tin cũ, Đảo nền Đen $\leftrightarrow$ Trắng/Đỏ trong 1 frame | `#REF-05` (`pin_04_72761350251141725.mp4`) |
-| **`pin_05`** | **Oblique Cylindrical Text Drum (`-8°`) & Mechanical Snap `0°`** | Vô hiệu hóa chỉ số ảo, Xoay trụ chữ tốc độ cao rồi khóa lẫy tại tâm | `#REF-06` (`pin_05_1125829606877714781.mp4`) |
-| **`pin_06`** | **Frosted Glass Pill $\rightarrow$ 3D Growth Card & Rack Focus** | Chuyển hóa thành kết quả/doanh thu, Lấy nét tiêu cự hoàn tất trước khi đọc | `#REF-07` (`pin_06_778911698106657356.mp4`) |
-| **`pin_07`** | **Circle-Expand Wipe, Full-Bleed Diagonal `<polygon>` & Lead-Char Seed** | Mồi cảnh tối giản: Chấm tròn bung nền, Cửa chéo SVG `<polygon>`, Chữ cái đầu rơi | `#REF-08` (`pin_07_967077720007189801.mp4`) |
-| **`pin_08`** | **Figma 4-Corner Selection Box, 6 Cursors & Elastic Split** | Khung chọn 4 góc kéo mở từ khóa, Con trỏ bầy đàn tụ hội, Tách dòng đàn hồi | `#REF-09` (`pin_08_1027242996274400557.mp4`) |
+| **`pin_01`** | **Vertical Slot-Machine Wheel Picker & 3-Sphere Blend** | Phủ định danh xưng cũ (cuộn & gạch bỏ) hoặc Giao thoa 3 yếu tố | `#REF-02` (`pin_01_[số-tk].mp4`) |
+| **`pin_02`** | **Radial Tick-Mark Dial & Cascading File Tree** | Giải thích thuật toán, Phân nhánh cấu trúc từ gốc đến ngọn | `#REF-03` (`pin_02_[số-tk].mp4`) |
+| **`pin_03`** | **3D Glass Rolodex Stack & Isometric Grid Tilt** | Đóng gói quy trình, Xếp lớp thẻ kiến thức theo trục sâu Z | `#REF-04` (`pin_03_[số-tk].mp4`) |
+| **`pin_04`** | **Backlit Aura, Cursor Typing & Hard Invert** | Câu Hook phá vỡ niềm tin cũ, Đảo nền Đen $\leftrightarrow$ Trắng/Đỏ trong 1 frame | `#REF-05` (`pin_04_[số-tk].mp4`) |
+| **`pin_05`** | **Oblique Cylindrical Text Drum (`-8°`) & Mechanical Snap `0°`** | Vô hiệu hóa chỉ số ảo, Xoay trụ chữ tốc độ cao rồi khóa lẫy tại tâm | `#REF-06` (`pin_05_[số-tk].mp4`) |
+| **`pin_06`** | **Frosted Glass Pill $\rightarrow$ 3D Growth Card & Rack Focus** | Chuyển hóa thành kết quả/doanh thu, Lấy nét tiêu cự hoàn tất trước khi đọc | `#REF-07` (`pin_06_[số-tk].mp4`) |
+| **`pin_07`** | **Circle-Expand Wipe, Full-Bleed Diagonal `<polygon>` & Lead-Char Seed** | Mồi cảnh tối giản: Chấm tròn bung nền, Cửa chéo SVG `<polygon>`, Chữ cái đầu rơi | `#REF-08` (`pin_07_[số-tk].mp4`) |
+| **`pin_08`** | **Figma 4-Corner Selection Box, 6 Cursors & Elastic Split** | Khung chọn 4 góc kéo mở từ khóa, Con trỏ bầy đàn tụ hội, Tách dòng đàn hồi | `#REF-09` (`pin_08_[số-tk].mp4`) |
 | **`riso_09`** | **Claude Motion Editorial Risograph + Hybrid Cut** | Phong cách tạp chí giấy kem `#F3ECDD`, cam `#E2683A`, xanh `#1E5A64`, đan xen Cận mặt | `#PROD-10` (`VietClaudeMotionRiso10s.tsx`) |
 | **`mc_power_10`** | **MasterClass Acid-Lime Brutalist Kinetic Text** | Nền vàng chanh `#E0EE70` + Đen `#060606` + Đỏ `#C8232C`: Bàn cờ vua Step-Move, Cột trụ đen | `#PROD-11` (`VietMasterClassPower10s.tsx`) |
 | **`paage_11`** | **Paage UI Showcase 70s (28 Beats + 6 B-Roll + 4-Phase Cursor)** | Quảng cáo Khóa học/Spa/Nha khoa/SaaS 11 chương khớp 1:1 nhịp trống & click chuột | `#PROD-12` (`PaageOffline0711_30fps.tsx`) |

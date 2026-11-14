@@ -1,6 +1,6 @@
 ---
 name: spa-pa2
-description: "Mantra: SPA PA2 / EDIT SPA PA2 / PHUONG AN 2 / EDIT VIDEO NAY THEO SPA PA2. Dựng video chuyên gia Spa PA2-V9.4 đa học viên (cắt vấp ẩn, giữ phụ đề nguyên bản, khóa thuật ngữ, poster theo từ neo, ngân sách đồ họa ≤20%, B-Roll thật chống trùng). Riêng Hằng/Alice → dùng skill edit-hang."
+description: "Mantra: SPA PA2 / EDIT SPA PA2 / PHUONG AN 2 / EDIT VIDEO NAY THEO SPA PA2. Dựng video chuyên gia Spa PA2-V9.4 đa học viên (cắt vấp ẩn, giữ phụ đề nguyên bản, khóa thuật ngữ, poster theo từ neo, ngân sách đồ họa ≤20%, B-Roll thật chống trùng). SPA PA2 không kèm tên học viên → dùng skill này; riêng Hằng/Alice → dùng skill edit-hang."
 tier: B
 ---
 

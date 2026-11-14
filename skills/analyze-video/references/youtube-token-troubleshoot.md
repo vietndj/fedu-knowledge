@@ -10,12 +10,12 @@ Hệ thống lưu trữ **SONG SONG 4 Dự án Google Cloud & nhiều Token** t�
 
 | File Credentials | Dự án Google Cloud | Token file tương ứng | Kênh kết nối |
 |---|---|---|---|
-| `client_secrets.json` | `vietndj-git-cms` (69969715731) | `token_sabakiz.pickle` | **Sabakiz** (Kênh chính) |
-| `client_secrets.json` | `vietndj-git-cms` (69969715731) | `token_full.pickle` | **Nguyễn Đức Việt** (Cá nhân) |
-| `client_secrets_2.json` | `apiutu` (1039460750493) | `token_sabakiz_2.pickle` | **Sabakiz** (Dự phòng P2) |
-| `client_secrets_2.json` | `apiutu` (1039460750493) | `token_kqc.pickle` | **KQC** (Gánh tải trần kênh) |
-| `client_secrets_3.json` | `edumall-1308` (717398322377) | `token_meditation.pickle` | **Meditation Book** |
-| `client_secrets_4.json` | `upyoutub004` (855224766184) | `token_project_4.pickle` | **Dự Án 4** (Dự phòng mở rộng) |
+| `client_secrets.json` | `vietndj-git-cms` ([số-tk]) | `token_sabakiz.pickle` | **Sabakiz** (Kênh chính) |
+| `client_secrets.json` | `vietndj-git-cms` ([số-tk]) | `token_full.pickle` | **Nguyễn Đức Việt** (Cá nhân) |
+| `client_secrets_2.json` | `apiutu` ([số-tk]) | `token_sabakiz_2.pickle` | **Sabakiz** (Dự phòng P2) |
+| `client_secrets_2.json` | `apiutu` ([số-tk]) | `token_kqc.pickle` | **KQC** (Gánh tải trần kênh) |
+| `client_secrets_3.json` | `edumall-1308` ([số-tk]) | `token_meditation.pickle` | **Meditation Book** |
+| `client_secrets_4.json` | `upyoutub004` ([số-tk]) | `token_project_4.pickle` | **Dự Án 4** (Dự phòng mở rộng) |
 
 **Cơ chế hoạt động:**
 - Script `extract_storyboard_02.py` tự động thử lần lượt các token trong `TOKEN_CANDIDATES`.

@@ -104,7 +104,7 @@
 > 2. **TẤT CẢ SLIDE NỘI DUNG TIẾP THEO (SLIDES 2+):**
 >    - Dùng chuẩn **NỀN TRẮNG TINH KHIẾT `#FFFFFF`** với chữ than chì đậm `#0F172A` / `#334155` sắc nét, thẻ Container `#F8FAFC`, Viền `#E2E8F0`, Takeaway trắng/xanh ngọc.
 >    - Header Top dàn đều 2 đầu (`SPACE_BETWEEN`): `2026  •  TÊN CHUYÊN MỤC` ở trái và `imess/zalo : [sđt]` ở phải.
->    - Footer Bar dàn đều 2 đầu: Mentor Profile (Avatar + `Mentor : Nguyễn Đức Việt` / `0934.688.632`) ở trái và `[email]` ở phải.
+>    - Footer Bar dàn đều 2 đầu: Mentor Profile (Avatar + `Mentor : Nguyễn Đức Việt` / `[sđt]`) ở trái và `[email]` ở phải.
 > 3. **CẤU TRÚC THẺ ĐỐI CHIẾU 2 CỘT (KIỂU 03):**
 >    - **BẮT BUỘC** có Cụm Header Thẻ riêng: Badge phân loại màu + Tiêu đề thẻ lớn `32px` (`FD Aeonik Extended Bold`).
 >    - **BẮT BUỘC** có đường kẻ Hairline 1px `#E2E8F0` ngăn cách tiêu đề và nội dung bên dưới.

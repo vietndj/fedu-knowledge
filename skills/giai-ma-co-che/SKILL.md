@@ -65,9 +65,9 @@ Chuyển hóa yêu cầu của anh Việt thành một **Prompt 1 Dòng Chuẩn 
 
 | Phím tắt | Độ dài (UTF-16) | Cách nhớ 1 giây | Chức năng cốt lõi |
 | :---: | :---: | :--- | :--- |
-| **`nnn`** | `1.362` | **N**guyên lý / Cơ chế | Giải mã từ gốc chuẩn Việt × Claude: Thơ lục bát vật lý đầu bài + Câu định nghĩa qua phép thử hoán đổi + Cơ chế `Bước 1 -> 2 -> 3` + Phân loại + Phép thử 3 phút |
-| **`lll`** | `1.842` | **L**ink YouTube | Giải phẫu Video/Podcast chuẩn `v3-claude` (không dùng bảng tràn mobile): Bản đồ 5 mạch `###` + Điểm mù + Quy tắc hành động + Hỏi-Đáp giải mã gốc khớp 100% `kho.fedu.vn` |
-| **`ggg`** | `1.198` | **G**óc nhìn cơ chế | Giải phẫu 3 tầng hành vi đời thực (Phản xạ giữ thể diện + Cơ chế chạy ngầm `Bước 1 -> 2 -> 3` + Phép thử 3 phút), khử sạch 100% thuật ngữ hàn lâm |
+| **`nnn`** | `1.390` | **N**guyên lý / What-Why-How | Đào sâu ngay ý đang bàn trong chat theo mạch `What – Why – How` (tối đa `350` từ): vào thẳng bản chất, 3 lối giải thích khác biệt (đảo ngược, phóng to, đặt cạnh), cấm lặp ví dụ cũ |
+| **`lll`** | `1.941` | **L**ink YouTube | Giải phẫu Video/Podcast chuẩn `v3-claude` thoáng mắt (`<= 40` từ/dòng, không bảng tràn mobile): Bản đồ 5 mạch + Điểm mù + Quy tắc hành động + 5 thẻ Hỏi-Đáp lượt 1 khớp `kho.fedu.vn` |
+| **`ggg`** | `1.599` | **G**óc nhìn đa ngành | Mở rộng ý đang bàn qua `4–5` góc nhìn chọn lọc (Năng lượng, Tâm lý học, Tiến hóa, Vật lý & Lượng tử ẩn dụ, Thiết kế game, Kinh tế hành vi, Hệ thống) + phép thử loại góc + việc làm dưới `10` phút |
 | **`ttt`** | `1.067` | **T**hơ Lục Bát dài | Tóm tắt toàn bộ nội dung thành bài thơ Lục Bát dài kèm giải thích & ẩn dụ từng khổ |
 
 ---

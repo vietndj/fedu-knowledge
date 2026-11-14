@@ -11,7 +11,7 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 | [audit-viet-lai](audit-viet-lai/SKILL.md) | A | 6 | 2 |
 | [dinh-huong-kenh](dinh-huong-kenh/SKILL.md) | A | 18 | 2 |
 | [giai-ma-co-che](giai-ma-co-che/SKILL.md) | A | 9 | 1 |
-| [kho-logic](kho-logic/SKILL.md) | A | 10 | 1 |
+| [kho-logic](kho-logic/SKILL.md) | A | 11 | 1 |
 | [html](html/SKILL.md) | A | 9 | 0 |
 | [phan-tich-podcast-youtube](phan-tich-podcast-youtube/SKILL.md) | A | 6 | 0 |
 | [bai-tap-quay-9-canh](bai-tap-quay-9-canh/SKILL.md) | A | 3 | 0 |

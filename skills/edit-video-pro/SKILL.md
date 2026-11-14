@@ -43,7 +43,7 @@ Kích hoạt ngay khi người dùng:
 ## ⚡ CỔNG CHỐNG NGHẼN BƯỚC 0 (FAST-TRACK K4 — 0.3s, CẤM MÒ FILE THỦ CÔNG)
 Khi nhắc tới học viên K4 hoặc `"k4 ho so"`, **BẮT BUỘC chạy ngay 1 lệnh duy nhất ở Bước 1** (`0.3s`):
 > _(lệnh chạy trên Mac — đã lược khi lên Web)_
-- **4 ĐIỀU CẤM TUYỆT ĐỐI:** (1) **CẤM `find [đường-dẫn-Mac]`** mò thư mục học viên hay `music_db.json` (Hồ sơ ở `[đường-dẫn-Mac] ho so/<slug>`, nhạc ở `[đường-dẫn-Mac]` & `[đường-dẫn-Mac]`); (2) **CẤM đọc chồng chéo 3–4 `SKILL.md`** (`edit-video-pro` + `auto-edit-video` + `cinematic-video-auditor` + `nhac-bank`); (3) **CẤM `read_file` nguyên cục `video_styles_registry.json` / `bgm_catalog_v3.json`** (`PERF GUARD G1`); (4) **CẤM đọc toàn bộ `.html` khám kênh** (đã được `k4_fast_preflight.py` trích yếu 30 dòng).
+- **4 ĐIỀU CẤM TUYỆT ĐỐI:** (1) **CẤM `find "$HOME"`** mò thư mục học viên hay `music_db.json` (Hồ sơ ở `"$HOME/Documents/k4 ho so/<slug>"`, nhạc ở `[đường-dẫn-Mac]` & `"$HOME/Documents/CODE/nhac-fedu/data/music_db.json"`); (2) **CẤM đọc chồng chéo 3–4 `SKILL.md`** (`edit-video-pro` + `auto-edit-video` + `cinematic-video-auditor` + `nhac-bank`); (3) **CẤM `read_file` nguyên cục `video_styles_registry.json` / `bgm_catalog_v3.json`** (`PERF GUARD G1`); (4) **CẤM đọc toàn bộ `.html` khám kênh** (đã được `k4_fast_preflight.py` trích yếu 30 dòng).
 
 ## LUẬT BẮT BUỘC V3.6 (KHÔNG ĐƯỢC BỎ BƯỚC)
 1. **Cú pháp 1 dòng phẳng theo HĐH (CẤM tách lệnh lẻ / CẤM tự tạo lại `venv`):**
@@ -120,7 +120,7 @@ Khi nhắc tới học viên K4 hoặc `"k4 ho so"`, **BẮT BUỘC chạy ngay 
 
 ---
 
-## BƯỚC 3 — KẾT XUẤT VIDEO CHUYÊN GIA (`EXPERT_STOP2`) & KIỂM ĐỊNH 35 CỔNG
+## BƯỚC 3 — KẾT XUẤT VIDEO CHUYÊN GIA (`EXPERT_STOP2`) & KIỂM ĐỊNH 43 CỔNG
 Ngay khi người dùng gõ **`1`**, **`2`**, **`3`** (hoặc `làm đi`, `ok`), hoặc ngay khi hẹn giờ **60 giây** nổ ở **DỪNG 2**, chạy lệnh `stop-decide` cho `EXPERT_STOP2` để kết xuất video ra `<OUT>`:
 
 - **Windows (PowerShell):**
@@ -133,7 +133,7 @@ Ngay khi người dùng gõ **`1`**, **`2`**, **`3`** (hoặc `làm đi`, `ok`),
 - Kiểm tra bảng ảnh `<WORK_DIR>/preview_12frames.jpg`, đọc kết quả `VERIFIER` rồi báo trung thực kết quả kèm đường dẫn video `<OUT>` hoàn chỉnh. Tuyệt đối cấm báo hoàn tất nếu Verifier chưa `PASS`.
 
 
-## 0B & 0C. CHUẨN DỰNG V3.5 (42 CỔNG) & CHỈ MỤC NÂNG CẤP FULL STUDIO
+## 0B & 0C. CHUẨN DỰNG V3.9 (43 CỔNG) & CHỈ MỤC NÂNG CẤP FULL STUDIO
 - Xem [`references/catalog_bds_style_spec.md`](file://[đường-dẫn-Mac]) (mục 0B & 0C) và `references/v3_spec_and_upgrade_index.md`.
 
 ---
