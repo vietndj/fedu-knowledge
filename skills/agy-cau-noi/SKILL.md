@@ -39,8 +39,8 @@ Ghi **thêm vào cuối** Google Docs **`AGY_INBOX`** (thư mục `AGY_BRIDGE`; 
 Luật ghi:
 - Kịch bản/bài viết chốt → `### FILE: kichban/<slug>.md`. Code → đường dẫn đích dự kiến, vd `### FILE: motion/Scene3.tsx`.
 - Mỗi file viết **đầy đủ**; không dùng ``` bao quanh nội dung file.
-- Sau khi ghi xong, báo anh: "Đã ghi về máy — ở Antigravity gõ `VỀ MÁY`."
-- Không ghi mật khẩu, token, PIN, số tài khoản vào Docs.
+- Sau khi ghi xong, báo anh: "Đã ghi về máy — máy tự đồng bộ định kỳ 15 phút (hoặc gõ `VỀ MÁY` để lấy ngay)."
+- Không ghi mật khẩu, API token, mã PIN hệ thống vào Docs. Riêng **số điện thoại, Zalo, email liên hệ của học viên/khách hàng** khi cập nhật STU thì **ghi đầy đủ 100%, không che giấu**.
 
 ## 4. Nếu không truy cập được Google Docs
 Xuất nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` trong chat để anh bấm Sao chép; ở Mac gõ `VỀ MÁY` (máy tự đọc clipboard).
@@ -55,10 +55,13 @@ Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KH
 ## 6. Lưu kho — `LƯU KHO` / `lưu kho` / `CẤT KHO`
 Áp kỹ năng `luu-kho` (V3 — 4 phần tự đóng chống cụt file): chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ lục bát + Cẩm nang 5 chương + đúng 10 thẻ Hỏi-Đáp sắc nhất), ghi nối tiếp **4 khối tự đóng riêng biệt** `[1/4]..[4/4] key=K<MMDDHHMM>` vào cuối `AGY_INBOX` (`logicXX.meta.json` + `logicXX_kienthuc_p1.md` → `logicXX_kienthuc_p2.md` → `logicXX_hoidap_p1.md` → `logicXX_hoidap_p2.md`), mỗi khối đều kết thúc bằng `=== HẾT PHIÊN ===`. Chu trình sao lưu tối trên Mac (hoặc lệnh `VỀ MÁY` từ Remote Agent) sẽ tự ghép 4 mảnh, kiểm định và xuất bản lên `kho.fedu.vn` với 0 tốn token.
 
-## 7. Tra cứu dữ liệu toàn hệ thống — Kho, Học viên STU, Web `fedu.vn`, Bối cảnh
-Mỗi tối máy Mac tự động cập nhật dữ liệu mới vào thư mục Google Drive **`AGY_BRIDGE/kho`**. Khi anh Việt hỏi bất kỳ dữ liệu nào trong hệ thống, **tự mở đọc ngay file `00_TONG_DAI_FEDU`** (≤22KB) trong `AGY_BRIDGE/kho` bằng công cụ Google Drive mà không bắt anh đính kèm file:
+## 7. Tra cứu dữ liệu toàn hệ thống — Kho, Học viên STU, Danh bạ SĐT, Web `fedu.vn`, Bối cảnh
+Mỗi tối (và ngay sau mỗi lần cập nhật STU) máy Mac tự động cập nhật dữ liệu vào thư mục Google Drive **`AGY_BRIDGE/kho`**. Khi anh Việt hỏi bất kỳ dữ liệu hay số điện thoại nào, **tự mở đọc ngay file `00_TONG_DAI_FEDU`** (≤20KB) trong `AGY_BRIDGE/kho`:
+- **Học viên, Số điện thoại học viên/khách, lớp K3/K4, tư vấn & khám kênh (`stu.fedu.vn` & `led.fedu.vn`):** mở **`STU_MUC_LUC`** (có sẵn SĐT thật của 367 học viên + chỉ số cuốn `STU_HO_SO_1..N`). Nếu là người mới gọi điện / đăng ký web chưa vào STU, mở thêm **`LED_DANH_BA_KHACH`** (426+ danh bạ & SĐT).
 - **Bối cảnh, khóa học, 4 định dạng video & `thcn`:** mở `BOICANH_MASTER_FEDU`.
-- **Học viên, lớp K3/K4, tư vấn & khám kênh (`stu.fedu.vn`):** mở `STU_MUC_LUC` tìm dòng học viên để lấy số cuốn → mở đúng `STU_HO_SO_1..N`.
 - **Kho Logic (`logic01..logicXX`), Giải mã cơ chế & Podcast:** mở `MUC_LUC_LOGIC_PODCAST` → mở `KHO_kien-thuc_*`, `KHO_hoi-dap_logicXX_1` hoặc `PODCAST_N`.
 - **Bản đồ 15+ chuyên trang `fedu.vn` & tự động hóa:** mở `HE_THONG_WEB_FEDU`.
 - **Video YouTube 90 ngày & lịch sử làm việc gần đây trên Mac:** mở `VIDEO30_MUC_LUC` hoặc `KHOAI_<YYYY-MM>` mới nhất.
+
+## 8. Cập nhật / Thêm mới Học viên vào STU — `cập nhật stu` / `update stu` / `thêm vào stu`
+Khi anh Việt gửi SĐT + Tên + nội dung trao đổi và bảo cập nhật/thêm vào STU, áp kỹ năng `cap-nhat-stu`: nối ngay 1 khối `=== AGY-PHIEN <YYYY-MM-DD HH:MM> | cap-nhat-stu: <Tên> ===` chứa `### FILE: stu/<slug>.json` (`{"name": "...", "phone": "...", "industry": "...", "class": "...", "topic": "...", "inquiry": "...", "marketing_use": "...", "notes": "..."}`) vào cuối `AGY_INBOX`. Máy Mac tự quét mỗi 15 phút nạp thẳng lên `stu.fedu.vn`, cập nhật lại sổ Drive và nhắn Telegram báo anh Việt.
