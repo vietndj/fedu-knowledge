@@ -19,7 +19,7 @@ Anh Việt dùng 2 nơi làm việc: **Antigravity trên Mac** (chạy code, ren
 - Việc chỉ Mac làm được (render video, ffmpeg, deploy, CDP, Telegram, Zalo, CapCut, Google Flow): **không giả vờ chạy**, mà soạn sẵn spec/code đầy đủ để máy chạy.
 
 ## 3. Cuối phiên — `CHỐT PHIÊN` / `GHI VỀ MÁY` / `KẾT PHIÊN`
-Ghi **thêm vào cuối** Google Docs **`AGY_INBOX`** (thư mục `AGY_BRIDGE`; chưa có thì tạo). Không xóa phần cũ. Đúng khuôn sau (máy tách tự động theo các dấu `###`):
+Ghi **thêm vào cuối** Google Docs **`AGY_INBOX`** (hoặc **`AGY_INBOX_CHUNG`** nếu đang ở tài khoản phụ dùng chung kho được chia sẻ; chưa có thì tạo). Không xóa phần cũ. Đúng khuôn sau (máy tách tự động theo các dấu `###`):
 
 ```
 === AGY-PHIEN <YYYY-MM-DD HH:MM> | <tiêu đề ngắn> ===
