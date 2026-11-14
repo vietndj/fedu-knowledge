@@ -65,9 +65,9 @@ Chuyển hóa yêu cầu của anh Việt thành một **Prompt 1 Dòng Chuẩn 
 
 | Phím tắt | Độ dài (UTF-16) | Cách nhớ 1 giây | Chức năng cốt lõi |
 | :---: | :---: | :--- | :--- |
-| **`nnn`** | `1.390` | **N**guyên lý / What-Why-How | Đào sâu ngay ý đang bàn trong chat theo mạch `What – Why – How` (tối đa `350` từ): vào thẳng bản chất, 3 lối giải thích khác biệt (đảo ngược, phóng to, đặt cạnh), cấm lặp ví dụ cũ |
+| **`nnn`** | `1.890` | **N**guyên lý / What-Why-How | Đào sâu không giới hạn từ theo mạch `What – Why – How` chống mỏi mắt (`##`, `---`, thẻ `###`, đoạn `2–3` câu neo từ khóa đậm, số Ả Rập, ví dụ đối chiếu A/B số thật + `2` góc tiếp cận) |
 | **`lll`** | `1.941` | **L**ink YouTube | Giải phẫu Video/Podcast chuẩn `v3-claude` thoáng mắt (`<= 40` từ/dòng, không bảng tràn mobile): Bản đồ 5 mạch + Điểm mù + Quy tắc hành động + 5 thẻ Hỏi-Đáp lượt 1 khớp `kho.fedu.vn` |
-| **`ggg`** | `1.599` | **G**óc nhìn đa ngành | Mở rộng ý đang bàn qua `4–5` góc nhìn chọn lọc (Năng lượng, Tâm lý học, Tiến hóa, Vật lý & Lượng tử ẩn dụ, Thiết kế game, Kinh tế hành vi, Hệ thống) + phép thử loại góc + việc làm dưới `10` phút |
+| **`ggg`** | `1.850` | **G**óc nhìn đa ngành | Mở rộng sâu không giới hạn từ qua `5–6` hệ quy chiếu lớn (Năng lượng & Sinh học, Tâm lý học sâu, Tiến hóa, Vật lý & Lượng tử ẩn dụ, Thiết kế Game, Kinh tế hành vi & Hệ thống) chống tường chữ |
 | **`ttt`** | `1.067` | **T**hơ Lục Bát dài | Tóm tắt toàn bộ nội dung thành bài thơ Lục Bát dài kèm giải thích & ẩn dụ từng khổ |
 
 ---
