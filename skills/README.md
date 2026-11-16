@@ -5,8 +5,8 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 | Kỹ năng | Tầng | KB | Tài liệu kèm |
 |---|---|---|---|
 | [agy-cau-noi](agy-cau-noi/SKILL.md) | A | 7 | 0 |
-| [sua-du-lieu](sua-du-lieu/SKILL.md) | A | 3 | 0 |
-| [cap-nhat-stu](cap-nhat-stu/SKILL.md) | A | 3 | 0 |
+| [sua-du-lieu](sua-du-lieu/SKILL.md) | A | 4 | 0 |
+| [cap-nhat-stu](cap-nhat-stu/SKILL.md) | A | 2 | 0 |
 | [luu-kho](luu-kho/SKILL.md) | A | 6 | 0 |
 | [3-tang](3-tang/SKILL.md) | A | 10 | 1 |
 | [nguyen-viet-voice](nguyen-viet-voice/SKILL.md) | A | 15 | 1 |

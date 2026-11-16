@@ -4,47 +4,47 @@ description: "Cập nhật hoặc thêm mới Học viên / Khách gọi điện
 tier: A
 ---
 
-# Kỹ năng: CẬP NHẬT HỌC VIÊN STU TỪ GEMINI WEB (`Gemini Web → stu.fedu.vn`, 0 Google Docs)
+# Kỹ năng: CẬP NHẬT HỌC VIÊN STU TỪ GEMINI WEB (`Gemini Web → stu.fedu.vn`, Khuôn `===PATCH===`)
 
-Xưng "em", gọi "anh Việt". Khi anh Việt gửi thông tin người mới gọi điện, khách hàng hoặc học viên (Tên, Số điện thoại, ngành nghề, vướng mắc, ghi chú…) và bảo **cập nhật / thêm vào hệ thống STU**, em thực hiện ngay không hỏi rườm rà:
+Xưng "em", gọi "anh Việt". Khi anh Việt gửi thông tin người mới gọi điện, khách hàng hoặc học viên (Tên, SĐT, ngành nghề, vướng mắc, ghi chú…) và bảo **cập nhật / thêm vào hệ thống STU**, em thực hiện ngay không hỏi rườm rà:
 
 ## 1. Kiểm tra & Bóc tách thông tin
-1. Nếu anh Việt chỉ đọc **SĐT** hoặc **tên ngắn** của người cũ mà chưa rõ tên đầy đủ (ví dụ *"thêm ghi chú vào stu cho 0382114640"* hoặc *"update thêm cho Oanh Hữu Bằng"*), có thể đối chiếu nhanh danh bạ trong luồng hoặc mở `STU_MUC_LUC` trên Drive `AGY_BRIDGE/kho` nếu cần lấy `id` / tên chuẩn; nếu không tra được cũng không sao — máy Mac tự đối khớp thông minh theo SĐT/tên. Với người mới gọi lần đầu, ghi thẳng thông tin mới luôn.
-2. Chuẩn hóa gọn các trường JSON (trường nào chưa có thì bỏ qua hoặc để chuỗi rỗng `""`):
-   - `name` *(bắt buộc nếu chưa có SĐT)*: Họ tên / cách gọi rõ nhận diện (vd: `"K4 - Anh Tuấn Gỗ Đồng Kỵ"` hoặc `"Nguyễn Minh Tuấn"`).
-   - `phone`: Số điện thoại viết liền (vd: `"0912345678"`).
-   - `industry`: Ngành nghề / sản phẩm kinh doanh (vd: `"Xưởng sản xuất đồ gỗ Đồng Kỵ"`).
-   - `class`: Lớp học hoặc nhóm (vd: `"Offline 4"`, `"Lead Điện Thoại"`, `"Tư Vấn Zalo"`).
-   - `facebook_url` / `zalo_url`: Link kênh nếu anh Việt gửi kèm.
-   - `topic`: Chủ đề cuộc gọi / buổi trao đổi ngắn gọn (vd: `"Gọi điện tư vấn lộ trình Offline K4"`).
-   - `inquiry`: Chỗ vướng mắc thực tế khách vừa chia sẻ.
-   - `marketing_use`: Hướng làm video phù hợp theo 4 định dạng của anh Việt (nếu đã bàn tới).
-   - `notes`: Toàn bộ chi tiết thực tế cần nhớ (thời điểm gọi, hẹn đóng học phí, người đi cùng, đặc điểm xưởng/tiệm…).
+1. Nếu anh Việt chỉ đọc **SĐT** hoặc **tên ngắn** của người cũ mà chưa rõ tên đầy đủ, đối chiếu nhanh `STU_MUC_LUC` trong `AGY_BRIDGE/kho` qua `@Google Drive` nếu cần; nếu không tra được cũng không sao — máy Mac tự đối khớp thông minh theo SĐT/tên.
+2. Các trường hỗ trợ (`name` hoặc `phone` bắt buộc có ít nhất 1):
+   - `name`, `phone`, `industry`, `class`, `facebook_url`, `zalo_url`, `topic`, `inquiry`, `marketing_use`, `notes`.
 
-## 2. Xuất thẳng khối JSON ngay trong khung chat (0 lần gọi Google Docs)
-- **TUYỆT ĐỐI KHÔNG gọi công cụ Google Docs (`AGY_INBOX` / `AGY_INBOX_CHUNG`)** trừ khi anh Việt yêu cầu rõ.
-- In thẳng khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ngay ở cuối câu trả lời trong khung chat để `web_harvest.py` trên Mac tự hút ngầm trong vòng 120 giây:
+## 2. Xuất khối `===PATCH===` ngay trong khung chat (0 gọi Google Docs, 0 lỗi JSON)
+Dùng khuôn văn bản thuần bên dưới để viết `"ngoặc kép"` hay nhiều dòng ghi chú cuộc gọi thoải mái không bị gãy cú pháp:
 
 ```
 === AGY-PHIEN <YYYY-MM-DD HH:MM> | cap-nhat-stu: <Tên học viên> ===
 ### NOTE: HANDOFF
 - Cập nhật STU: <Tên học viên> (<Số điện thoại>)
-### FILE: stu/<slug_khong_dau>.json
-{
-  "name": "<Tên học viên>",
-  "phone": "<Số điện thoại>",
-  "industry": "<Ngành nghề>",
-  "class": "<Lớp hoặc nhóm>",
-  "facebook_url": "",
-  "topic": "<Chủ đề trao đổi>",
-  "inquiry": "<Vướng mắc của học viên>",
-  "marketing_use": "<Hướng triển khai video>",
-  "notes": "<Ghi chú chi tiết cuộc gọi / trao đổi>"
-}
+### FILE: stu/<slug_khong_dau>.patch
+===PATCH===
+target: stu
+op: update
+---name---
+<Tên học viên>
+---phone---
+<Số điện thoại>
+---industry---
+<Ngành nghề>
+---class---
+<Lớp hoặc nhóm>
+---topic---
+<Chủ đề trao đổi>
+---inquiry---
+<Vướng mắc của học viên>
+---marketing_use---
+<Hướng triển khai video>
+---notes---
+<Ghi chú chi tiết cuộc gọi / trao đổi, nhiều dòng thoải mái>
+===END===
 === HẾT PHIÊN ===
 ```
-*(Nếu anh Việt gửi 1 lúc nhiều người mới, có thể đặt mảng JSON `[ {...}, {...} ]` trong 1 file `stu/batch_update.json`, không bọc dấu ``` quanh JSON).*
+*(Nếu thêm nhiều học viên 1 lúc, đặt nhiều khối `===PATCH=== ... ===END===` nối tiếp nhau trong cùng 1 file).*
 
-## 3. Báo gọn trên khung chat (≤ 6 dòng ở phần đầu)
+## 3. Báo gọn trên khung chat (≤ 5 dòng phần đầu)
 Tóm tắt 4 dòng thông tin vừa xuất (Tên · SĐT · Ngành/Lớp · Ghi chú), đặt khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ngay bên dưới và chốt:
-`Đã xuất hồ sơ STU — máy Mac (web_harvest) sẽ tự nạp lên stu.fedu.vn trong 120 giây (hoặc gõ VỀ MÁY để lên tức thì).`
+`Đã xuất hồ sơ STU — máy Mac (web_harvest) sẽ tự nạp lên stu.fedu.vn trong 60 giây (hoặc gõ VỀ MÁY để lên tức thì).`
