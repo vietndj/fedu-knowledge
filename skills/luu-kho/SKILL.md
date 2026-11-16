@@ -48,6 +48,10 @@ Xưng "em", gọi "anh Việt". Khi anh gõ **`lưu kho`** (hoặc `LƯU KHO`, `
 ```
 
 - **Trường hợp bài quá dài có nguy cơ bị cắt giữa chừng ở khung chat:** Tách làm 2 khối tự đóng in liên tiếp trong khung chat: `[1/2] key=K<MMDDHHMM>` (`logicXX.meta.json` + `logicXX_kienthuc.md`) và `[2/2] key=K<MMDDHHMM>` (`logicXX_hoidap.md`), mỗi khối kết thúc bằng `=== HẾT PHIÊN ===` riêng.
+- **Chế độ chia lượt nhỏ qua Web Delegate (tránh timeout & ngắt SPA trên luồng dài):**
+  1. Lượt 1 (luồng mới 1-shot): chỉ xuất `kho/logicXX.meta.json` và dàn ý 5 chương (≤ 2 KB).
+  2. Mỗi chương (hoặc nhóm 2 chương) và phần `logicXX_hoidap.md`: chạy ở **1 luồng mới 1-shot riêng**, đính kèm `logicXX.meta.json` + dàn ý làm ngữ cảnh, mỗi lượt giữ đầu ra tối đa ~4 KB (mục tiêu xong dưới 180 giây).
+  3. Cuối cùng máy Mac gom các phần đã xuất thành bộ 3 file chuẩn trong 1 thư mục `inbox/` để `kho_inbox_apply.py` kiểm định và đẩy lên web (cấm gửi nối tiếp quá nhiều lượt nặng trên cùng 1 luồng SPA).
 
 ## 4. Sau khi hoàn tất
 - Phần đầu câu trả lời in gọn (≤ 15 dòng): 2 câu thơ tóm tắt + mục lục 5 chương + 10 câu Hỏi, sau đó in nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ở cuối.
