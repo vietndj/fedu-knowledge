@@ -13,9 +13,15 @@ tier: B
 > Tài liệu kèm: `references/catalog_bds_style_spec.md`, `references/modes_quickstart.md`, `references/v3_spec_and_upgrade_index.md`
 
 
-<!-- [SKILL_CONTRACT: 8 · ACK: c8-280fedu · VERSION: 3.8.10] -->
+<!-- [SKILL_CONTRACT: 10 · ACK: c10-501fedu · VERSION: 5.0.1] -->
 
-# EDIT VIDEO PRO V3.9 — CHUYÊN GIA `EXPERT`, 2 CAM FULL STUDIO, MÀN HÌNH CUỐI `CTA OUTRO` TỰ QUYẾT ĐỊNH THƯƠNG HIỆU & HẸN GIỜ TỰ ĐỘNG `60 GIÂY`
+# EDIT VIDEO PRO V5.0 — 18 MỞ ĐẦU HỢP NHẤT (`M1..M10 + PA1..PA8`), 9 KHUÔN `K1..K9` SÁNG/TỐI, 15 PHONG CÁCH 5 TRỤC
+
+> **Mở đầu Hợp nhất & Lịch Thoát 12P (`hook_catalog.json`):** Toàn bộ `master` và `published` dùng chung 1 màn hình chọn 18 kiểu mở đầu (`M1..M10` 3D + `PA1..PA8` phổ thông, thêm `PA6 Kính Ngắm`, `PA7 Bong Bóng Bình Luận`, `PA8 Màn Đen Chữ 2 Cấp`), tất cả áp dụng đồng nhất pha **Thoát 12P 9 frames (`0.30s`)** gọn sạch.
+>
+> **9 Khuôn Đồ Họa Sáng/Tối (`K1..K9` · `editorial_sheets_v5_ext.py`):** Cố định hộp đọc `V8.3 scale=1.000` (0% méo chữ), xóa khoảng trống chết với khung `[48, 150, 1032, 1548]`, bổ sung `K6 Câu Đinh` hoàn chỉnh, `K7 Khung Bằng Chứng`, `K8 Lưới Bento`, `K9 Hội Thoại`, pha **Thoát 8 frames**, hỗ trợ song hành **Light Theme & Dark Theme** qua `--theme light|dark`.
+>
+> **15 Phong Cách 5 Trục (`editing_style_packs.py`):** Tách riêng **C11 Đàm Đạo Phương Đông · Mặc Trà** (chị Trang Vũ), **C7b Hoa Tinh Tuyển · Orchid** (chị Đoan Trang), **C12 Vlog Nhật Ký**, cùng **C10 Thuế Báo Đen Bôi Sáng**, **G1.AI / G1.EV**, **G2 Spa**, **G3 BĐS**, v.v. Trang minh họa hệ thống: `https://videoai.fedu.vn/editvideopro2.html`.
 
 > **Định tuyến Tự động Tầng Đặc Quyền `HẬU KÌ` (`../hau-ki/SKILL.md`):** Nếu trên máy hiện tại tồn tại `../hau-ki/SKILL.md` (`../hau-ki/profile.json`) và người dùng KHÔNG yêu cầu tường minh *"dùng kỹ năng edit pro đã xuất bản"*, hệ thống tự động chạy ở chế độ **`HẬU KÌ` (`tier=master`)** (mở khóa trọn bộ công nghệ: Hook Staggered Kinetic Exit, Cảnh Trám Bento Dense 0% trống chỗ, Chủ đề Công nghệ AI thông minh, Tự sinh Logo Vector theo nội dung + Bảng Tổng Kết Các Quyết Định Tự Động ở cuối). Khi người dùng nói *"dùng kỹ năng edit pro đã xuất bản"*, truyền `--tier published` để chạy đúng bản đóng gói đại chúng.
 >
@@ -50,7 +56,7 @@ Khi nhắc tới học viên K4 hoặc `"k4 ho so"`, **BẮT BUỘC chạy ngay 
    - **Windows (PowerShell):** `& "$HOME\.mfx_v3\venv\Scripts\python.exe" "$HOME\.gemini\config\skills\edit-video-pro\scripts\edit_video_pro_engine.py" ...`
    - **macOS / Linux:** `"$HOME/.mfx_v3/venv/bin/python" "$HOME/.gemini/config/skills/edit-video-pro/scripts/edit_video_pro_engine.py" ...` (nếu thiếu venv gọi `python3`). Nhắc chọn dòng 3 (`Yes, and always allow...`) nếu hỏi quyền ở Bước 1.
 2. **Phân loại `CONTENT_MODE=BROLL` vs `CONTENT_MODE=EXPERT` tại `scan-extract`:**
-   - **`CONTENT_MODE=BROLL`:** Nếu có `[BROLL_CURATION_REQUIRED]`, chạy **Bước 1.2b (`curate-sequence`)** theo 6 Luật `R1..R6` để nhận `===DỪNG 1===`. Chỉ có **1 Điểm dừng (`BROLL_STOP1`)** hiển thị 3 phương án nhịp (`1`: Nhịp Gọn · `2 ⭐`: Mặc định · `3`: Nhịp Thư), giữ đủ các góc đã duyệt, không hỏi Thương hiệu/Chữ/Bản đồ.
+   - **`CONTENT_MODE=BROLL`:** Nếu có `[BROLL_CURATION_REQUIRED]`, chạy **Bước 1.2b (`curate-sequence`)** theo 6 Luật `R1..R6` để nhận `===DỪNG 1===`. Chỉ có **1 Điểm dừng (`BROLL_STOP1`)** hiển thị 3 phương án nhịp (`1`: Nhịp Gọn · `2 ⭐`: Mặc định · `3`: Nhịp Thư), giữ đủ các góc đã duyệt; tự suy chữ Hook và tên thương hiệu cho Outro từ hồ sơ học viên (`k4_fast_preflight.py`), chỉ hỏi khi hồ sơ trống.
    - **`CONTENT_MODE=EXPERT`:** Gồm **Điểm dừng 1 (`EXPERT_STOP1`)** và **Điểm dừng 2 (`EXPERT_STOP2`)**, đều có bảng ảnh `1 / 2 ⭐ / 3`.
 3. **Bảng Kèm Ảnh + Gõ `1`, `2`, `3` + Hẹn Giờ Tự Động `60 Giây`:**
    - Ở `===DỪNG 1===` và `===DỪNG 2===`, **BẮT BUỘC dán nguyên văn 100% khối chữ và bảng ảnh Markdown** giữa cặp thẻ.
@@ -60,6 +66,11 @@ Khi nhắc tới học viên K4 hoặc `"k4 ho so"`, **BẮT BUỘC chạy ngay 
    - Số cảnh **Poster → Motion Graphic** (`compare_sheet`, `anatomy_sheet`, `roadmap_sheet`, `proportion_sheet`, `checklist_sheet`, `macro_quote`) = `ceil(N / 2)` (`>= 1`); số cảnh **`ai_image`** >= `1` (không có B-Roll/Maps thì `= floor(N / 2)`); đan xen không xếp 3 cảnh cùng nhóm liên tiếp.
    - **Tiêu đề `title` trên Poster BẮT BUỘC viết Sentence case**, cấm IN HOA TOÀN BỘ.
    - **Hook đầu video (`0.0s .. hook_dur_s`):** Cung cấp `hook` và `hook_options` (`A`, `B`, `C`): `kicker` IN HOA `<= 4` từ, `l1` IN HOA `<= 22` ký tự, `l2` chữ thường/nhấn `<= 30` ký tự, 0% bịa số, 0% dấu `...`.
+5. **HOOK + OUTRO BẮT BUỘC CHO MỌI VIDEO (kể cả `BROLL` / không thoại / ghép nhạc & chữ):**
+   - Mọi video xuất ra đều **BẮT BUỘC** có màn Hook mở đầu (`1.2s..2.5s`) thuộc 18 mẫu hợp nhất `M1..M10` hoặc `PA1..PA8` (`hook_catalog.json` / `hook_standard_ext.py`) kèm cú thoát 12P `9 frames`. Video không thoại mặc định dùng `PA8 Màn Đen Chữ 2 Cấp` (hoặc `PA6` / `M1` nếu có chủ thể rõ); chữ Hook trích từ hồ sơ học viên (`k4_fast_preflight.py`) hoặc bối cảnh thư mục, 0% bịa số, 0% sến.
+   - Mọi video đều **BẮT BUỘC** khép bằng **Outro đồ họa chuẩn của hệ thống**: chọn trong bộ `O1..O6` (`scripts/outro_vault.py`) hoặc bộ 6 mẫu theo nhóm ngành **`OT1..OT6` (`scripts/batch_student_outro.py` — trưng bày tại `videoai.fedu.vn`)**. **CẤM tự chế Outro mới**, và **CẤM đặt video quay chạy nền bên dưới thẻ Outro** (ngoại trừ đúng khuôn chuẩn `O4` khi tách khung).
+   - **CẤM viết script Python rời** (`render_*.py`, ghép FFmpeg thủ công...) để dựng video cho học viên mà bỏ qua `edit_video_pro_engine.py` / `batch_student_outro.py`. Nếu engine `BROLL` còn thiếu luồng nối tự động, phải vá nối vào engine hoặc gọi đúng hàm chuẩn (`hook_3d_archetypes` / `hook_standard_ext` / `outro_vault` / `batch_student_outro`) và báo lại anh Việt.
+   - Tuyệt đối không báo hoàn tất nếu video chưa có Hook ở `0.0s` và Outro chuẩn ở cuối (bắt buộc soi ảnh kiểm định IN/MID/OUT trước khi giao).
 
 ---
 
@@ -106,7 +117,7 @@ Khi nhắc tới học viên K4 hoặc `"k4 ho so"`, **BẮT BUỘC chạy ngay 
   - Chạy lệnh nguyên tử `stop-decide`:
     - Windows: `& "$HOME\.mfx_v3\venv\Scripts\python.exe" "$HOME\.gemini\config\skills\edit-video-pro\scripts\edit_video_pro_engine.py" stop-decide --work-dir "<WORK_DIR>" --stop <BROLL_STOP1|EXPERT_STOP1> --answer "<1|2|3>" --source <user|timer> --out "<OUT>"`
     - macOS / Linux: `"$HOME/.mfx_v3/venv/bin/python" "$HOME/.gemini/config/skills/edit-video-pro/scripts/edit_video_pro_engine.py" stop-decide --work-dir "<WORK_DIR>" --stop <BROLL_STOP1|EXPERT_STOP1> --answer "<1|2|3>" --source <user|timer> --out "<OUT>"`
-  - **Nếu là `BROLL_STOP1`:** Lệnh `stop-decide` tự động kết xuất hoàn chỉnh video Chuỗi B-Roll Đa Góc Máy ra `<OUT>` và kiểm định 5 cổng `G0..G4` — báo ngay kết quả kèm video `<OUT>` và kết thúc!
+  - **Nếu là `BROLL_STOP1`:** Lệnh `stop-decide` tự động kết xuất hoàn chỉnh video Chuỗi B-Roll Đa Góc Máy ra `<OUT>`, **bắt buộc ghép kèm Hook mở đầu (`PA8`/`PA6`/`M*`) ở `0.0s` và Outro chuẩn (`O1..O6` / `OT1..OT6`) ở cuối video**, kiểm định `G0..G4` + cổng Hook/Outro — báo ngay kết quả kèm video `<OUT>` và kết thúc!
 - **Nếu ở `EXPERT_STOP1` người dùng gõ chữ tự do (tên thương hiệu, từ cần sửa riêng, link Google Maps, hoặc thả ảnh logo):**
   - Gọi `stop-decide --work-dir "<WORK_DIR>" --stop EXPERT_STOP1 --answer "<nội dung>" --source user --lock-only` để khóa hẹn giờ, sau đó gọi `apply-answers --work-dir "<WORK_DIR>"` kèm các cờ tương ứng (`--brand-name`, `--speaker-name`, `--logo`, `--fix-asr`, `--maps-url`, `--accept-proposed`).
 

@@ -4,7 +4,8 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 
 | Kỹ năng | Tầng | KB | Tài liệu kèm |
 |---|---|---|---|
-| [agy-cau-noi](agy-cau-noi/SKILL.md) | A | 6 | 0 |
+| [agy-cau-noi](agy-cau-noi/SKILL.md) | A | 7 | 0 |
+| [sua-du-lieu](sua-du-lieu/SKILL.md) | A | 2 | 0 |
 | [cap-nhat-stu](cap-nhat-stu/SKILL.md) | A | 3 | 0 |
 | [luu-kho](luu-kho/SKILL.md) | A | 5 | 0 |
 | [3-tang](3-tang/SKILL.md) | A | 10 | 1 |
@@ -21,7 +22,7 @@ Sinh tự động bởi `bridge.py skills`. Không sửa tay — sửa ở Mac r
 | [banner-k4](banner-k4/SKILL.md) | B | 14 | 0 |
 | [tao-slide-pro](tao-slide-pro/SKILL.md) | B | 10 | 1 |
 | [motion](motion/SKILL.md) | B | 11 | 6 |
-| [edit-video-pro](edit-video-pro/SKILL.md) | B | 19 | 3 |
+| [edit-video-pro](edit-video-pro/SKILL.md) | B | 22 | 3 |
 | [spa-pa2](spa-pa2/SKILL.md) | B | 9 | 0 |
 | [edit-hang](edit-hang/SKILL.md) | B | 7 | 0 |
 

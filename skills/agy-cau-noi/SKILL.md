@@ -19,7 +19,7 @@ Anh Việt dùng 2 nơi làm việc: **Antigravity trên Mac** (chạy code, ren
 - Việc chỉ Mac làm được (render video, ffmpeg, deploy, CDP, Telegram, Zalo, CapCut, Google Flow): **không giả vờ chạy**, mà soạn sẵn spec/code đầy đủ để máy chạy.
 
 ## 3. Cuối phiên — `CHỐT PHIÊN` / `GHI VỀ MÁY` / `KẾT PHIÊN`
-Ghi **thêm vào cuối** Google Docs **`AGY_INBOX`** (hoặc **`AGY_INBOX_CHUNG`** nếu đang ở tài khoản phụ dùng chung kho được chia sẻ; chưa có thì tạo). Không xóa phần cũ. Đúng khuôn sau (máy tách tự động theo các dấu `###`):
+**Luật Zero-Docs (mặc định, 0% dừng hỏi Xác nhận/Hủy):** TUYỆT ĐỐI KHÔNG tự ý gọi công cụ Google Docs (`AGY_INBOX` / `AGY_INBOX_CHUNG`) trừ khi anh Việt yêu cầu rõ *"ghi vào Google Docs"*. Thay vào đó, **in trực tiếp 1 khối tự đóng ngay ở cuối câu trả lời trong khung chat** để `web_harvest.py` trên Mac tự hút ngầm qua trình duyệt trong 120 giây (đúng khuôn sau để máy tách tự động theo các dấu `###`):
 
 ```
 === AGY-PHIEN <YYYY-MM-DD HH:MM> | <tiêu đề ngắn> ===
@@ -39,11 +39,11 @@ Ghi **thêm vào cuối** Google Docs **`AGY_INBOX`** (hoặc **`AGY_INBOX_CHUNG
 Luật ghi:
 - Kịch bản/bài viết chốt → `### FILE: kichban/<slug>.md`. Code → đường dẫn đích dự kiến, vd `### FILE: motion/Scene3.tsx`.
 - Mỗi file viết **đầy đủ**; không dùng ``` bao quanh nội dung file.
-- Sau khi ghi xong, báo anh: "Đã ghi về máy — máy tự đồng bộ định kỳ 15 phút (hoặc gõ `VỀ MÁY` để lấy ngay)."
-- Không ghi mật khẩu, API token, mã PIN hệ thống vào Docs. Riêng **số điện thoại, Zalo, email liên hệ của học viên/khách hàng** khi cập nhật STU thì **ghi đầy đủ 100%, không che giấu**.
+- Sau khi in xong khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` trong chat, báo gọn: "Đã chốt phiên ngay trên khung chat — máy Mac (`web_harvest`) tự thu hoạch trong 120 giây (hoặc gõ `VỀ MÁY` để lấy ngay)."
+- Không ghi mật khẩu, API token, mã PIN hệ thống. Riêng **số điện thoại, Zalo, email liên hệ của học viên/khách hàng** khi cập nhật STU thì **ghi đầy đủ 100%, không che giấu**.
 
-## 4. Nếu không truy cập được Google Docs
-Xuất nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` trong chat để anh bấm Sao chép; ở Mac gõ `VỀ MÁY` (máy tự đọc clipboard).
+## 4. Nếu chạy ở chế độ khác hoặc cần kéo thủ công
+Giữ nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` trong chat; ở Mac gõ `VỀ MÁY` để kéo tức thì (không phụ thuộc Google Docs Extension).
 
 ## 5. Phân tích video — `PHÂN TÍCH VIDEO <mã>`
 Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KHÔNG cắt ảnh).
@@ -53,7 +53,7 @@ Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KH
 4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng, sync có `"nguon_hinh": "video"`). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.
 
 ## 6. Lưu kho — `LƯU KHO` / `lưu kho` / `CẤT KHO`
-Áp kỹ năng `luu-kho` (V4 — 1 khối gọn sắc bén + Fallback khung chat): chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ lục bát + Cẩm nang 5 chương + 10 thẻ Hỏi-Đáp sắc nhất, tổng ~2.200–2.800 từ), ghi nối tiếp **1 khối tự đóng** (`logicXX.meta.json` + `logicXX_kienthuc.md` + `logicXX_hoidap.md`, kết thúc bằng `=== HẾT PHIÊN ===`) vào cuối `AGY_INBOX` (hoặc `AGY_INBOX_CHUNG` nếu ở tài khoản phụ). Nếu công cụ Google Docs lỗi hoặc chưa cấp quyền thì in nguyên khối `=== AGY-PHIEN ... === HẾT PHIÊN ===` ngay trên khung chat để máy Mac tự hút trực tiếp qua trình duyệt.
+Áp kỹ năng `luu-kho` (V4 Zero-Docs): chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ lục bát + Cẩm nang 5 chương + 10 thẻ Hỏi-Đáp sắc nhất, tổng ~2.200–2.800 từ), in trực tiếp **1 khối tự đóng** (`logicXX.meta.json` + `logicXX_kienthuc.md` + `logicXX_hoidap.md`, kết thúc bằng `=== HẾT PHIÊN ===`) ngay trên khung chat để máy Mac tự hút trực tiếp qua trình duyệt. **TUYỆT ĐỐI KHÔNG gọi công cụ Google Docs (`AGY_INBOX` / `AGY_INBOX_CHUNG`)**.
 
 ## 7. Tra cứu dữ liệu toàn hệ thống — Kho, Học viên STU, Danh bạ SĐT, Web `fedu.vn`, Bối cảnh
 Mỗi tối (và ngay sau mỗi lần cập nhật STU) máy Mac tự động cập nhật dữ liệu vào thư mục Google Drive **`AGY_BRIDGE/kho`**. Khi anh Việt hỏi bất kỳ dữ liệu hay số điện thoại nào, **tự mở đọc ngay file `00_TONG_DAI_FEDU`** (≤20KB) trong `AGY_BRIDGE/kho`:
