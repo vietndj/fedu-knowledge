@@ -23,12 +23,12 @@ Ngay dưới mỗi `# Mạch`:
 4. Các mục con `### …` viết tự do — cơ chế tháo gỡ, câu chuyện thực tế, góc nhìn lật ngược. Viết theo mạch suy nghĩ tự nhiên, **KHÔNG ép khuôn cứng** kiểu "Chỗ kẹt / Cơ chế / Câu chuyện" nếu ý không vừa khuôn.
 5. Cuối mỗi mạch ghi đúng 1 dòng nguồn: `> - 🎙️ **Nguồn:** Hội thoại Gemini · <YYYY-MM-DD>`
 
-### Hỏi-Đáp (7 thẻ tinh lọc sắc nhất, không viết 10 thẻ loãng):
+### Hỏi-Đáp (5–7 thẻ tinh lọc sắc nhất, không viết 10 thẻ loãng):
 Mỗi thẻ đọc độc lập vẫn hiểu. Thứ tự 5 khối gọn:
 1. `Hỏi: …` câu hỏi mở ≤ 18 từ (`Tại sao…` / `Làm sao…`).
 2. 2 câu thơ mỏ neo `> *…*` / `> *…*` ngay dưới dòng Hỏi.
 3. Câu định nghĩa in đậm `**… không phải là ... mà là ...**`.
-4. `### Cơ chế chạy ngầm`: giải thích bản chất + 1 ví dụ đời thực cụ thể. Viết tự nhiên (3–8 dòng), **KHÔNG ép** khuôn "Bước 1→2→3", **BỎ HẲN** mục "Phân loại / Dấu hiệu nhận biết".
+4. `### Cơ chế chạy ngầm`: giải thích bản chất + 1 ví dụ đời thực cụ thể (3–8 dòng). **CẤM lặp khuôn "Bước 1→2→3" cho mọi thẻ và BỎ HẲN mục "Phân loại / Dấu hiệu nhận biết"** — mỗi thẻ phải tự chọn cách trình bày sắc nhất với cơ chế đó (so sánh, phản ví dụ, nhân-quả, liệt kê phản trực giác, hoặc phân tích liền mạch; không để 2 thẻ liên tiếp giống hệt cấu trúc diễn giải).
 5. `### Làm ngay`: 1 việc làm được ngay dưới 3 phút, có số đo, kèm 1 dòng nguồn `> - 🎙️ **Nguồn:** Hội thoại Gemini · <YYYY-MM-DD>`.
 
 **Luật cứng**: cấm bảng Markdown `|---|`. Cấm thuật ngữ hàn lâm và từ sáo (tối ưu hóa, chiến lược, chuyên gia, phễu, nỗi đau, khao khát, khơi gợi, bí quyết, đỉnh cao, tử huyệt, đòn bẩy, thực địa, biến số, chốt hạ, lầm tưởng, bản lề, định vị, trả bài, thần thái, làm màu, gồng cứng, đơ mắt, bắt sống). Không ghi chữ FEDU trong tiêu đề hay nội dung.
