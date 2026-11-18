@@ -53,7 +53,7 @@ Mac đã tải video, cắt shot, đẩy ảnh lên kho ảnh và YouTube (em KH
 4. `CHỐT PHIÊN` với đúng 2 FILE `video/<folder>/shots.json` và `video/<folder>/sync.json` (JSON thuần, đủ khóa, đúng số shot, id lấy trong danh mục đóng, sync có `"nguon_hinh": "video"`). Mac gõ `VỀ MÁY` là tự lên `ytuong.fedu.vn`.
 
 ## 6. Lưu kho — `LƯU KHO` / `lưu kho` / `CẤT KHO`
-Áp kỹ năng `luu-kho` (V4 Zero-Docs): chưng cất cả luồng thành chuyên đề `logicXX` (2 câu thơ lục bát + Cẩm nang 5 chương + 10 thẻ Hỏi-Đáp sắc nhất, tổng ~2.200–2.800 từ), in trực tiếp **1 khối tự đóng** (`logicXX.meta.json` + `logicXX_kienthuc.md` + `logicXX_hoidap.md`, kết thúc bằng `=== HẾT PHIÊN ===`) ngay trên khung chat để máy Mac tự hút trực tiếp qua trình duyệt. **TUYỆT ĐỐI KHÔNG gọi công cụ Google Docs (`AGY_INBOX` / `AGY_INBOX_CHUNG`)**.
+Áp kỹ năng `luu-kho` (V5 Deep-Think): chưng cất cả luồng thành chuyên đề `logicXX` (Cẩm nang **3 mạch** + **7 thẻ Hỏi-Đáp** sắc nhất, bỏ mục đệm rườm rà), **LUÔN tách 2 lượt `[1/2]` (`meta.json` + `kienthuc.md` `<= 12 KB`) và `[2/2]` (`hoidap.md` `<= 15 KB`)** in trực tiếp trong khung chat để máy Mac tự hút qua trình duyệt. **TUYỆT ĐỐI KHÔNG gọi công cụ Google Docs (`AGY_INBOX` / `AGY_INBOX_CHUNG`).**
 
 ## 7. Tra cứu dữ liệu toàn hệ thống — Kho, Học viên STU, Danh bạ SĐT, Web `fedu.vn`, Bối cảnh
 Mỗi tối (và ngay sau mỗi lần cập nhật STU) máy Mac tự động cập nhật dữ liệu vào thư mục Google Drive **`AGY_BRIDGE/kho`**. Khi anh Việt hỏi bất kỳ dữ liệu hay số điện thoại nào, **tự mở đọc ngay file `00_TONG_DAI_FEDU`** (≤20KB) trong `AGY_BRIDGE/kho`:
